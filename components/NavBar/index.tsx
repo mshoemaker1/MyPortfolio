@@ -9,6 +9,7 @@ import HamburgerIcon from "./HamburgerIcon";
 const menuItems = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const Navbar = () => {
