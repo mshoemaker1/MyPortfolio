@@ -1,9 +1,30 @@
+import Image from "next/image";
+import headshot from "../../public/Shoemaker_Meg-28544.jpeg";
+
 export default function About() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <p className="flex w-full justify-center text-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-        Welcome!
-      </p>
+      <div className="flex flex-col items-center w-full md:flex-row-reverse md:justify-end md:w-1/2">
+        {/* Text Container */}
+        <div className="md:ml-8">
+          <h3 className="text-3xl font-semibold text-left dark:text-white">
+            Welcome!
+          </h3>
+          <p className="text-left mt-2 dark:text-gray-300">
+            Here's a little bit about me.
+          </p>
+        </div>
+        {/* Image */}
+        <div className="mt-4 md:mt-0">
+          <Image
+            src={headshot}
+            alt="Meg Shoemaker"
+            className="rounded-lg"
+            width={200}
+            height={200}
+          />
+        </div>
+      </div>
     </main>
   );
 }

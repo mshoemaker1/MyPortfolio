@@ -38,7 +38,7 @@ const Navbar = () => {
               <MenuItem key={item.href} href={item.href} label={item.label} />
             ))}
           </div>
-          
+
           {/* Hamburger Menu */}
           <div className="flex md:hidden">
             <button
