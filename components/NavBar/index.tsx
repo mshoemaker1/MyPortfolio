@@ -1,36 +1,21 @@
-'use client';
-// Navbar.tsx
+"use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
+import MenuItem from "./MenuItem";
+import HamburgerIcon from "./HamburgerIcon";
+
+const menuItems = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
-  };
-
-  const MenuItem: React.FC<{ href: string; label: string }> = ({
-    href,
-    label,
-  }) => {
-    const isActive = pathname === href;
-
-    return (
-      <Link href={href}
-          className={`${
-            isActive
-              ? "text-gray-600 dark:text-gray-400 bg-gray-200 dark:bg-gray-700 hover:bg-gray-300 dark:hover:bg-gray-600"
-              : "text-gray-400 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700"
-          } block px-4 py-2 rounded-md transition-colors duration-200 ease-in-out`}
-        >
-          {label}
-      </Link>
-    );
   };
 
   return (
@@ -48,46 +33,29 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4">
-            <MenuItem href="/" label="Home" />
-            <MenuItem href="/about" label="About" />
+            {menuItems.map((item) => (
+              <MenuItem key={item.href} href={item.href} label={item.label} />
+            ))}
           </div>
+          
           {/* Hamburger Menu */}
           <div className="flex md:hidden">
             <button
               className="text-black dark:text-white focus:outline-none"
               onClick={toggleNavbar}
             >
-              <svg
-                className="h-6 w-6"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                {isOpen ? (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                ) : (
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                )}
-              </svg>
+              <HamburgerIcon isOpen={isOpen} />
             </button>
           </div>
         </div>
 
         {/* Responsive Menu */}
-        <div className={`${isOpen ? "block" : "hidden"} md:hidden mt-2 space-y-2`}>
-          <MenuItem href="/" label="Home" />
-          <MenuItem href="/about" label="About" />
+        <div
+          className={`${isOpen ? "block" : "hidden"} md:hidden mt-2 space-y-2`}
+        >
+          {menuItems.map((item) => (
+            <MenuItem key={item.href} href={item.href} label={item.label} />
+          ))}
         </div>
       </div>
     </nav>
