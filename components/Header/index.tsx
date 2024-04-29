@@ -1,7 +1,5 @@
-import { Fjalla_One } from "next/font/google";
 import { data } from "../../app/projectData";
-
-const fjallaOne = Fjalla_One({ weight: "400", subsets: ["latin"] });
+import { fjalla_one } from "../../app/fonts";
 
 interface HeaderProps {
   path?: string;
@@ -12,10 +10,10 @@ const Header = ({ path }: HeaderProps) => {
 
   return (
     <header className="flex flex-col mx-8 my-4 md:mx-16 md:my-8">
-      <h1 className={`${fjallaOne.className} text-[48px] font-semibold`}>
+      <h1 className={`${fjalla_one.className} text-[48px] font-semibold`}>
         {projectData!.title}
       </h1>
-      <p className={`${fjallaOne.className} text-[32px]`}>
+      <p className={`${fjalla_one.className} text-[32px]`}>
         {projectData!.description}
       </p>
       <div className="flex flex-row my-8">

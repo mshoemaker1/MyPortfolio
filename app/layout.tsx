@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Source_Sans_3 } from "next/font/google";
 import "./globals.css";
+import { sourceSans } from "./fonts";
 import NavBar from "@/components/NavBar";
-
-const sourceSans = Source_Sans_3({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Meg Shoemaker",
