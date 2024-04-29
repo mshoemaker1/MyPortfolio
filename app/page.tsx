@@ -1,31 +1,5 @@
-import projectImage1 from "../public/sample-project-001.jpeg";
-import projectImage2 from "../public/sample-project-002.jpeg";
-import projectImage3 from "../public/sample-project-003.jpeg";
-import ProjectCard from "@/components/ProjectCard";
-
-const projects = [
-  {
-    title: "Unlocking more bookings",
-    description: "Refreshing the Trapped Downtown website",
-    image: projectImage1,
-    bg: "bg-[#7D9968]",
-    path: "/projects/trapped-downtown",
-  },
-  {
-    title: "Community engagemnent",
-    description: "Relaunching the Richfield July 4th website",
-    image: projectImage2,
-    bg: "bg-[#9C9AC1]",
-    path: "/projects/richfield-july-4",
-  },
-  {
-    title: "Project Title",
-    description: "Some description text here",
-    image: projectImage3,
-    bg: "bg-[#D3C3AC]",
-    path: "",
-  },
-];
+import { data } from "./projectData";
+import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
@@ -38,7 +12,7 @@ export default function Home() {
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        {projects.map((project, index) => (
+        {data.map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}

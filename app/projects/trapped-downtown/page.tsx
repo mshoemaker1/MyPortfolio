@@ -1,13 +1,14 @@
+import { data } from "../../projectData";
 import Header from "../../../components/Header";
+
+const projectData = data.find(
+  (project) => project.path === "/projects/trapped-downtown"
+);
 
 export default function TrappedDowntown() {
   return (
     <main>
-      <Header
-        title="Unlocking more bookings"
-        description="Refreshing the Trapped Downtown website"
-        tags={["Freelance", "Entertainment"]}
-      />
+      <Header path={projectData?.path} />
     </main>
   );
 }

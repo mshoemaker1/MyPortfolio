@@ -2,7 +2,7 @@ import { data } from "../../projectData";
 import Header from "../../../components/Header";
 
 const projectData = data.find(
-  (project) => project.path === "/projects/richfield-july-4"
+  (project) => project.path === "/projects/project-3"
 );
 
 export default function RichfieldJuly4() {
