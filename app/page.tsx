@@ -5,22 +5,25 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Project Title",
+    title: "Trapped Downtown",
     description: "Some description text here",
     image: projectImage1,
     bg: "bg-sky-100",
+    path: "/projects/trapped-downtown",
   },
   {
     title: "Project Title",
     description: "Some description text here",
     image: projectImage2,
     bg: "bg-purple-100",
+    path: "",
   },
   {
     title: "Project Title",
     description: "Some description text here",
     image: projectImage3,
     bg: "bg-orange-100",
+    path: "",
   },
 ];
 
@@ -42,6 +45,7 @@ export default function Home() {
             description={project.description}
             image={project.image}
             bg={project.bg}
+            path={project.path}
           />
         ))}
       </div>

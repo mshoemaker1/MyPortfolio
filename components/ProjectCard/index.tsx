@@ -1,15 +1,24 @@
 import Image, { StaticImageData } from "next/image";
+import Link from "next/link";
 
 interface ProjectCardProps {
   title: string;
   description: string;
   image: StaticImageData;
   bg: string;
+  path: string;
 }
 
-const ProjectCard = ({ title, description, image, bg }: ProjectCardProps) => {
+const ProjectCard = ({
+  title,
+  description,
+  image,
+  bg,
+  path,
+}: ProjectCardProps) => {
   return (
-    <div
+    <Link
+      href={path}
       className={`flex flex-col items-center justify-center p-8 my-2 md:m-4 md:rounded-lg shadow-lg ${bg} text-indigo-800`}
     >
       <div className="flex flex-col justify-start w-full mb-6">
@@ -23,7 +32,7 @@ const ProjectCard = ({ title, description, image, bg }: ProjectCardProps) => {
         width={400}
         height={400}
       />
-    </div>
+    </Link>
   );
 };
 

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import headshot from "../../public/Shoemaker_Meg-28544.jpeg";
+import headshot from "../../public/Shoemaker_Meg-28544.jpg";
 
 export default function About() {
   return (
@@ -18,7 +18,7 @@ export default function About() {
         <div className="mt-4 md:mt-0">
           <Image
             src={headshot}
-            alt="Meg Shoemaker"
+            alt="Meg Shoemaker headshot"
             className="rounded-lg"
             width={200}
             height={200}
