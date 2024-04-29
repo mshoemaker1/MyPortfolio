@@ -8,7 +8,7 @@ const projectData = data.find(
 export default function TrappedDowntown() {
   return (
     <main>
-      <Header path={projectData?.path} />
+      <Header path={projectData!.path} />
     </main>
   );
 }

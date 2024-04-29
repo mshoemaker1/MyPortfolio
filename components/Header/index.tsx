@@ -9,21 +9,17 @@ interface HeaderProps {
 
 const Header = ({ path }: HeaderProps) => {
   const projectData = data.find((project) => project.path === path);
-  const headerTitle = projectData?.title || "Project Title";
-  const headerDescription =
-    projectData?.description || "Some description text here";
-  const tags = projectData?.tags;
 
   return (
     <header className="flex flex-col mx-8 my-4 md:mx-16 md:my-8">
       <h1 className={`${fjallaOne.className} text-[48px] font-semibold`}>
-        {headerTitle}
+        {projectData!.title}
       </h1>
       <p className={`${fjallaOne.className} text-[32px]`}>
-        {headerDescription}
+        {projectData!.description}
       </p>
       <div className="flex flex-row my-8">
-        {tags?.map((tag) => (
+        {projectData!.tags.map((tag) => (
           <Tag key={tag} title={tag} />
         ))}
       </div>
