@@ -7,7 +7,7 @@ export const data = [
     title: "Unlocking more bookings",
     description: "Refreshing the Trapped Downtown website",
     image: projectImage1,
-    bg: "bg-[#7D9968]",
+    bg: "bg-green",
     path: "/projects/trapped-downtown",
     tags: ["Freelance", "Entertainment"]
   },
@@ -15,7 +15,7 @@ export const data = [
     title: "Community engagemnent",
     description: "Relaunching the Richfield July 4th website",
     image: projectImage2,
-    bg: "bg-[#9C9AC1]",
+    bg: "bg-lavender",
     path: "/projects/richfield-july-4",
     tags: ["Freelance", "Community"]
   },
@@ -23,7 +23,7 @@ export const data = [
     title: "Project Title",
     description: "Some description text here",
     image: projectImage3,
-    bg: "bg-[#D3C3AC]",
+    bg: "bg-sand",
     path: "/projects/project-3",
     tags: ["Tag 1", "Tag 2"]
   },
