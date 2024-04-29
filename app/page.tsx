@@ -5,24 +5,24 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projects = [
   {
-    title: "Trapped Downtown",
-    description: "Some description text here",
+    title: "Unlocking more bookings",
+    description: "Refreshing the Trapped Downtown website",
     image: projectImage1,
-    bg: "bg-sky-100",
+    bg: "bg-[#7D9968]",
     path: "/projects/trapped-downtown",
   },
   {
-    title: "Project Title",
-    description: "Some description text here",
+    title: "Community engagemnent",
+    description: "Relaunching the Richfield July 4th website",
     image: projectImage2,
-    bg: "bg-purple-100",
-    path: "",
+    bg: "bg-[#9C9AC1]",
+    path: "/projects/richfield-july-4",
   },
   {
     title: "Project Title",
     description: "Some description text here",
     image: projectImage3,
-    bg: "bg-orange-100",
+    bg: "bg-[#D3C3AC]",
     path: "",
   },
 ];
