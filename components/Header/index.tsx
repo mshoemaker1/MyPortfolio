@@ -10,12 +10,8 @@ const Header = ({ path }: HeaderProps) => {
 
   return (
     <header className="flex flex-col mx-8 my-4 md:mx-16 md:my-8">
-      <h1 className={`${fjalla_one.className} text-[48px] font-semibold`}>
-        {projectData!.title}
-      </h1>
-      <p className={`${fjalla_one.className} text-[32px]`}>
-        {projectData!.description}
-      </p>
+      <h1>{projectData!.title}</h1>
+      <h2>{projectData!.description}</h2>
       <div className="flex flex-row my-8">
         {projectData!.tags.map((tag) => (
           <Tag key={tag} title={tag} />

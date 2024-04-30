@@ -31,3 +31,50 @@ body {
     text-wrap: balance;
   }
 }
+
+h1 {
+  font-family: var(--font-fjalla-one);
+  font-size: 2rem;
+}
+
+h2 {
+  font-family: var(--font-fjalla-one);
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-family: var(--font-fjalla-one);
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-family: var(--font-fjalla-one);
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+/* screens over 768px */
+@media (min-width: 48em) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.375rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h5 {
+    font-size: 1.25rem;
+  }
+}

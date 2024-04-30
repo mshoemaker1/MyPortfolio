@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { sourceSans } from "./fonts";
+import { sourceSans, fjalla_one } from "./fonts";
 import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
@@ -15,7 +15,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sourceSans.className}>
+      <body className={`${sourceSans.className} ${fjalla_one.variable}`}>
         <NavBar />
         {children}
       </body>

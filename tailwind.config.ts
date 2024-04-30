@@ -12,8 +12,10 @@ const config: Config = {
         sand: "#D3C3AC",
         green: "#7D9968",
         lavender: "#9C9AC1",
-        tomato: "#BB5B4B",
         bronze: "#BA8745",
+        neutral: {
+          550: "#545454",
+        },
       }
     }
   },
