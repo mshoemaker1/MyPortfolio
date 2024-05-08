@@ -11,7 +11,7 @@ interface HeroContentProps {
 
 const ProjectHero = ({ bulletPoints, content }: HeroContentProps) => {
   return (
-    <div className="flex flex-col px-10 py-20 bg-neutral-550 md:flex-row md:px-40 md:py-30">
+    <div className="flex flex-col px-10 py-20 bg-neutral-550 text-white md:flex-row md:px-40 md:py-30">
       <div className="flex flex-col min-w-40 mb-8">
         {Object.keys(bulletPoints).map((key) => (
           <div key={key} className="mb-4">

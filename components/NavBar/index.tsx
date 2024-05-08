@@ -24,8 +24,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative bg-white text-black dark:bg-gray-800 dark:text-white shadow-md dark:shadow-lg">
-      <div className="max-w-7xl mx-auto px-4 py-2 relative z-10">
+    <nav className="relative bg-white text-black dark:bg-gray-950 dark:text-white shadow-md dark:shadow-lg">
+      <div className="max-w-screen-2xl mx-auto px-4 py-2 md:pr-24 relative z-10">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <Link href="/" className="ml-2 md:ml-10 w-10 md:w-[86px]">
