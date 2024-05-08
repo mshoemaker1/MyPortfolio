@@ -8,7 +8,7 @@ export const data = [
     title: "Unlocking more bookings",
     description: "Refreshing the Trapped Downtown website",
     image: projectImage1,
-    bg: "bg-green",
+    bg: "bg-green-500",
     path: "/projects/trapped-downtown",
     tags: ["Freelance", "Entertainment"],
     hero: {
@@ -29,7 +29,7 @@ export const data = [
     title: "Community engagemnent",
     description: "Relaunching the Richfield July 4th website",
     image: projectImage2,
-    bg: "bg-lavender",
+    bg: "bg-lavender-500",
     path: "/projects/richfield-july-4",
     tags: ["Freelance", "Community"],
     hero: {
@@ -50,7 +50,7 @@ export const data = [
     title: "Project Title",
     description: "Some description text here",
     image: projectImage3,
-    bg: "bg-sand",
+    bg: "bg-sand-500",
     path: "/projects/project-3",
     tags: ["Tag 1", "Tag 2"],
     hero: {

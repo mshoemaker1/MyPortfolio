@@ -9,11 +9,24 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sand: "#D3C3AC",
-        green: "#7D9968",
-        lavender: "#9C9AC1",
-        bronze: "#BA8745",
+        sand: {
+          300: "#E9E1D5",
+          500: "#D3C3AC",
+        },
+        green: {
+          300: "#BECBB3",
+          500: "#7D9968",
+        },
+        lavender: {
+          300: "#CDCCE0",
+          500: "#9C9AC1",
+        },
+        bronze: {
+          300: "#DDC3A2",
+          500: "#BA8745",
+        },
         neutral: {
+          350: "#AAAAAA",
           550: "#545454",
         },
       }
