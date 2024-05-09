@@ -1,11 +1,12 @@
 import { capitalize } from "@/utils/capitalize";
+import { Key } from "react";
 
 interface HeroContentProps {
   bulletPoints: {
     [key: string]: string[];
   };
   content: {
-    [key: string]: string;
+    [key: string]: string | (string | string[])[];
   };
 }
 
@@ -28,12 +29,40 @@ const ProjectHero = ({ bulletPoints, content }: HeroContentProps) => {
         {Object.keys(content).map((key) => (
           <div key={key} className="mb-4">
             <h3 className="mb-1">{capitalize(key)}</h3>
-            <p>{content[key]}</p>
+            <Content contentText={content[key]} />
           </div>
         ))}
       </div>
     </div>
   );
+};
+
+const Content = ({
+  contentText,
+}: {
+  contentText: string | (string | string[])[];
+}) => {
+  if (typeof contentText === "string") {
+    return <p>{contentText}</p>;
+  }
+
+  return contentText.map((paragraph, index) => {
+    if (typeof paragraph === "string") {
+      return (
+        <p key={index} className="mb-4">
+          {paragraph}
+        </p>
+      );
+    }
+
+    return (
+      <div key={index} className="mb-4 ml-4">
+        {paragraph.map((point, i) => (
+          <li key={i}>{point}</li>
+        ))}
+      </div>
+    );
+  });
 };
 
 export default ProjectHero;

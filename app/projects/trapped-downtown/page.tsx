@@ -12,7 +12,7 @@ const hero = projectData!.hero;
 export default function TrappedDowntown() {
   return (
     <main>
-      <Header path={projectData!.path} />
+      <Header path={projectData!.path} bgColor={projectData!.bg} />
       <div className="flex flex-col">
         <Image
           className="w-full"
