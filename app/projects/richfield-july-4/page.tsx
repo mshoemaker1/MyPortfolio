@@ -1,21 +1,26 @@
 import { data } from "../../projectData";
-import Header from "../../../components/Header";
-import Image from "next/image";
-import ProjectHero from "@/components/ProjectHero";
 import Section from "@/components/Section";
+import HeroHeader from "@/components/HeroHeader";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
 );
-const hero = projectData!.hero;
+const { path, bg, hero } = projectData!;
 
 export default function RichfieldJuly4() {
   return (
     <main>
-      <Header path={projectData!.path} bgColor={projectData!.bg} />
+      {projectData && (
+        <HeroHeader
+          path={path}
+          bg={bg}
+          heroImage={hero.image}
+          heroAlt={hero.alt}
+          heroBulletPoints={hero.bulletPoints}
+          heroContent={hero.content}
+        />
+      )}
       <div className="flex flex-col">
-        <Image className="w-full" src={hero.image} alt="Computer on a table" />
-        <ProjectHero bulletPoints={hero.bulletPoints} content={hero.content} />
         <Section
           title="Research"
           header="Competitive Analysis sparks a transformation"

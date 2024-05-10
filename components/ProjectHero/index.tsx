@@ -1,12 +1,12 @@
 import { capitalize } from "@/utils/capitalize";
-import { Key } from "react";
 
+export type HeroContentTextType = string | (string | string[])[];
 interface HeroContentProps {
   bulletPoints: {
     [key: string]: string[];
   };
   content: {
-    [key: string]: string | (string | string[])[];
+    [key: string]: HeroContentTextType;
   };
 }
 
@@ -37,11 +37,7 @@ const ProjectHero = ({ bulletPoints, content }: HeroContentProps) => {
   );
 };
 
-const Content = ({
-  contentText,
-}: {
-  contentText: string | (string | string[])[];
-}) => {
+const Content = ({ contentText }: { contentText: HeroContentTextType }) => {
   if (typeof contentText === "string") {
     return <p>{contentText}</p>;
   }

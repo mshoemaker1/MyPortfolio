@@ -14,6 +14,7 @@ export const data = [
     tags: ["Freelance", "Entertainment"],
     hero: {
       image: heroImageTrappedDowntown,
+      alt: "Hands holding a phone",
       bulletPoints: {
         role: ["UX Designer", "Project Manager"],
         tools: ["Figma", "Card Sort", "Google Suite"],
@@ -39,6 +40,7 @@ export const data = [
     tags: ["Volunteer", "Community", "Events"],
     hero: {
       image: heroImageRichfield,
+      alt: "Computer on a desk",
       bulletPoints: {
         role: ["UX Designer", "Web Designer"],
         tools: ["Figma", "Squarespace"],
@@ -63,14 +65,15 @@ export const data = [
     }
   },
   {
-    title: "Project Title",
-    description: "Some description text here",
+    title: "Finding the perfect coffee shop",
+    description: "Designing Little Cup, a responsive website",
     image: projectImage3,
-    bg: "bg-green-500",
-    path: "/projects/project-3",
-    tags: ["Tag 1", "Tag 2"],
+    bg: "bg-bronze-500",
+    path: "/projects/little-cup",
+    tags: ["Case study", "social", "consumer services"],
     hero: {
-      image: "../public/hero-trapped-downtown.jpg",
+      image: heroImageRichfield,
+      alt: "Computer on a desk",
       bulletPoints: {
         role: ["UX Designer", "Project Manager"],
         tools: ["Figma", "Card Sort", "Google Suite"],

@@ -1,25 +1,26 @@
 import { data } from "../../projectData";
-import Header from "../../../components/Header";
-import Image from "next/image";
-import ProjectHero from "@/components/ProjectHero";
 import Section from "@/components/Section";
+import HeroHeader from "@/components/HeroHeader";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
 );
-const hero = projectData!.hero;
+const { path, bg, hero } = projectData!;
 
 export default function TrappedDowntown() {
   return (
     <main>
-      <Header path={projectData!.path} bgColor={projectData!.bg} />
-      <div className="flex flex-col">
-        <Image
-          className="w-full"
-          src={hero.image}
-          alt="Hands holding a phone"
+      {projectData && (
+        <HeroHeader
+          path={path}
+          bg={bg}
+          heroImage={hero.image}
+          heroAlt={hero.alt}
+          heroBulletPoints={hero.bulletPoints}
+          heroContent={hero.content}
         />
-        <ProjectHero bulletPoints={hero.bulletPoints} content={hero.content} />
+      )}
+      <div className="flex flex-col">
         <Section
           title="Research"
           header="What are people seeing when they book an escape room?"
