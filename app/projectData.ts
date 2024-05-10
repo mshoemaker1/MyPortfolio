@@ -3,6 +3,9 @@ import projectImage2 from "../public/sample-project-002.jpeg";
 import projectImage3 from "../public/sample-project-003.jpeg";
 import heroImageTrappedDowntown from "../public/hero-trapped-downtown.jpg";
 import heroImageRichfield from "../public/hero-richfield.jpg";
+import handshake from "../public/handshake-icon.png";
+import dottedGrid from "../public/dotted-grid-icon.png";
+import people from "../public/people-icon.png";
 
 export const data = [
   {
@@ -89,5 +92,29 @@ export const data = [
         ]
       }
     }
+  },
+];
+
+export const richfieldResearchSquares = [
+  {
+    image: handshake,
+    alt: "Handshake icon",
+    title: "Rebuild Trust",
+    description:
+      "Without donations, the events will not happen so the website needs to authentically (and quickly) rebuild trust with the community and potential sponsors.",
+  },
+  {
+    image: dottedGrid,
+    alt: "Dotted grid icon",
+    title: "Build Awareness",
+    description:
+      "After a 3-year hiatus and a rebrand, users might be unaware or confused about the event.",
+  },
+  {
+    image: people,
+    alt: "People icon",
+    title: "Serve Multiple Audiences",
+    description:
+      "The website will serve as a hub for gathering donations, signing up volunteers and vendors, and event details.",
   },
 ];

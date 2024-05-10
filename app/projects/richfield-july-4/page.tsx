@@ -1,6 +1,12 @@
 import { data } from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
+import Image from "next/image";
+import aquaLogo from "../../../public/aqua-logo.jpg";
+import delanoLogo from "../../../public/delano-logo.jpg";
+import edinaLogo from "../../../public/edina-logo.jpg";
+import glendaleLogo from "../../../public/glendale-logo.jpg";
+import { richfieldResearchSquares } from "../../projectData";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -30,6 +36,32 @@ export default function RichfieldJuly4() {
             "Through the analysis, we identified two features we wanted to use:",
           ]}
         />
+        <div className="flex flex-row flex-wrap w-3/5 self-center justify-center sm:justify-between">
+          <Image
+            src={glendaleLogo}
+            alt="Glendale 4th of July Logo"
+            height={120}
+            className="my-4 mx-1 drop-shadow-md"
+          />
+          <Image
+            src={edinaLogo}
+            alt="Edina Art Fair Logo"
+            height={120}
+            className="my-4 mx-1 drop-shadow-md"
+          />
+          <Image
+            src={aquaLogo}
+            alt="Minneapolis Aquatennial Logo"
+            height={120}
+            className="my-4 mx-1 drop-shadow-md"
+          />
+          <Image
+            src={delanoLogo}
+            alt="Delano 4th of July Logo"
+            height={120}
+            className="my-4 mx-1 drop-shadow-md"
+          />
+        </div>
         <Section
           header="Meeting the users where they are"
           content={[
@@ -43,6 +75,23 @@ export default function RichfieldJuly4() {
             "My teammate led a brief empathy building exercise with our team and a small group of committee members. We imagined who might attend the event, what information they would need, and what pain points we would need to address as we design the new website.",
           ]}
         />
+        <div className="flex flex-row flex-wrap w-11/12 self-center justify-center sm:w-4/5">
+          {richfieldResearchSquares.map((square, index) => (
+            <div
+              key={index}
+              className="w-[290px] h-[252px] rounded-lg bg-lavender-500 text-black px-8 py-6 mx-6 my-2 md:w-[322px] md:h-[280px] md:text-lg"
+            >
+              <Image
+                src={square.image}
+                alt={square.alt}
+                className="w-6 md:w-8"
+              />
+              <p className="font-bold mt-3">{square.title}</p>
+              <p>{square.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="flex self-center border-black border-b-[1px] w-11/12 my-32 dark:border-white" />
       </div>
     </main>
   );
