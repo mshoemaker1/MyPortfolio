@@ -3,6 +3,7 @@ import projectImage2 from "../public/sample-project-002.jpeg";
 import projectImage3 from "../public/sample-project-003.jpeg";
 import heroImageTrappedDowntown from "../public/hero-trapped-downtown.jpg";
 import heroImageRichfield from "../public/hero-richfield.jpg";
+import heroLittleCup from "../public/hero-little-cup.jpg";
 import handshake from "../public/handshake-icon.png";
 import dottedGrid from "../public/dotted-grid-icon.png";
 import people from "../public/people-icon.png";
@@ -11,7 +12,7 @@ export const data = [
   {
     title: "Unlocking more bookings",
     description: "Refreshing the Trapped Downtown website",
-    image: projectImage1,
+    image: projectImage3,
     bg: "bg-sand-500",
     path: "/projects/trapped-downtown",
     tags: ["Freelance", "Entertainment"],
@@ -70,12 +71,12 @@ export const data = [
   {
     title: "Finding the perfect coffee shop",
     description: "Designing Little Cup, a responsive website",
-    image: projectImage3,
+    image: projectImage1,
     bg: "bg-bronze-500",
     path: "/projects/little-cup",
     tags: ["Case study", "social", "consumer services"],
     hero: {
-      image: heroImageRichfield,
+      image: heroLittleCup,
       alt: "Computer on a desk",
       bulletPoints: {
         role: ["UX Designer", "Project Manager"],

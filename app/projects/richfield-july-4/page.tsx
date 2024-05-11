@@ -7,6 +7,7 @@ import delanoLogo from "../../../public/delano-logo.jpg";
 import edinaLogo from "../../../public/edina-logo.jpg";
 import glendaleLogo from "../../../public/glendale-logo.jpg";
 import { richfieldResearchSquares } from "../../projectData";
+import { Divider } from "@/components/Divider";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -91,7 +92,28 @@ export default function RichfieldJuly4() {
             </div>
           ))}
         </div>
-        <div className="flex self-center border-black border-b-[1px] w-11/12 my-32 dark:border-white" />
+        <Divider />
+        <Section
+          title="Ideate"
+          header="Designing a foundation"
+          content={[
+            "The team spent a session designing paper wireframes to kickoff the design process. We knew we would be limited by the functions of Squarespace, but we did not let that hold back our creativity as we did our first sketches.",
+          ]}
+        />
+        <Section
+          header="Lo-Fi Wireframes"
+          content={[
+            "The team shared responsibilities for creating the digital wireframes in Figma. I designed the Homepage and the About page.",
+            "Based on our tight timeframe, we created digital wireframes for the main pages before shifting to build mode.",
+          ]}
+        />
+        <Section
+          header="Seeking a Retro & Patriotic feel"
+          content={[
+            "The rebrand of the event allowed for the website to have a new look. My teammate organized a moodboard that we added content to early in the project.",
+            "This served as a launching point for the visual look and feel of the website.",
+          ]}
+        />
       </div>
     </main>
   );

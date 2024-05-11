@@ -1,6 +1,7 @@
 import { data } from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
+import { Divider } from "@/components/Divider";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -39,6 +40,21 @@ export default function TrappedDowntown() {
           content={[
             "I interviewed 8 users about their experience researching, selecting, and booking events in advance (e.g. axe throwing, cooking classes). I also asked specific question about their experience with escape rooms, as this was of interest to our stakeholders.",
             "Following the interviews, I reviewed the notes and created an Empathy Map to better understand the perspective of our users.",
+          ]}
+        />
+        <Divider />
+        <Section
+          title="Ideate"
+          header="How do we organize the content in a way that puts users at ease and gives them confidence?"
+          content={[
+            "In the current site map, there was a lack of hierarchy, which can unintentionally get in the way of a good user experience. So in order to better understand how users would group the information on the website, I conducted 5 card sort activities.",
+            "Users were given 13 concepts and asked to group them. They could add additional concepts, if they thought something was missing. Finally, the users were asked to label the groups.",
+          ]}
+        />
+        <Section
+          header="Patterns emerge for a streamlined site map"
+          content={[
+            "I analyzed the card sort results using the Common Grouping and Similarity Matrix analysis methods.",
           ]}
         />
       </div>
