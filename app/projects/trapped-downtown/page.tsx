@@ -2,6 +2,11 @@ import { data } from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
 import { Divider } from "@/components/Divider";
+import Image from "next/image";
+import competition1 from "../../../public/group-6.png";
+import competition2 from "../../../public/group-7.png";
+import competition3 from "../../../public/group-8.png";
+import competition4 from "../../../public/group-9.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -29,6 +34,23 @@ export default function TrappedDowntown() {
             "I needed to conduct user research to really understand the needs of their current and potential customers. To get up to speed on current trends and relevant content, I did a competitive analysis on four Escape Room businesses located across the country.",
           ]}
         />
+        <div className="flex flex-col justify-center w-9/12 self-center md:flex-row-reverse md:justify-between">
+          <div className="w-5/12 bg-sand-500 text-black p-4 rounded-lg">
+            <p className="font-bold">Competitors’ Distinguishing Features:</p>
+            <ul>
+              <li>High contrast Call To Action (CTA) buttons</li>
+              <li>Frequent placement of CTA buttons throughout the site</li>
+              <li>Footer serves as a good safety net for lost users</li>
+              <li>Accordion format for FAQs, which reduces scroll</li>
+            </ul>
+          </div>
+          <div className="w-5/12 flex flex-row flex-wrap justify-between">
+            <Image src={competition1} alt="Lockbox company logo" />
+            <Image src={competition2} alt="Getout Omaha company logo" />
+            <Image src={competition3} alt="Breakout company logo" />
+            <Image src={competition4} alt="The Bureau company logo" />
+          </div>
+        </div>
         <Section
           header="Evaluating the current experience"
           content={[
