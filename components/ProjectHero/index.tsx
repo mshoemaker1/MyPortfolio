@@ -52,11 +52,11 @@ const Content = ({ contentText }: { contentText: HeroContentTextType }) => {
     }
 
     return (
-      <div key={index} className="mb-4 ml-4">
+      <ul key={index} className="mb-4 ml-4 list-disc px-2">
         {paragraph.map((point, i) => (
           <li key={i}>{point}</li>
         ))}
-      </div>
+      </ul>
     );
   });
 };

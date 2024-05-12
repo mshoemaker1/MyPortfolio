@@ -34,21 +34,39 @@ export default function TrappedDowntown() {
             "I needed to conduct user research to really understand the needs of their current and potential customers. To get up to speed on current trends and relevant content, I did a competitive analysis on four Escape Room businesses located across the country.",
           ]}
         />
-        <div className="flex flex-col justify-center w-9/12 self-center md:flex-row-reverse md:justify-between">
-          <div className="w-5/12 bg-sand-500 text-black p-4 rounded-lg">
+        <div className="flex flex-col justify-center w-9/12 self-center lg:flex-row-reverse lg:justify-between">
+          <div className="w-full bg-sand-500 text-black px-8 py-10 rounded-lg justify-items-center md:text-lg lg:w-6/12">
             <p className="font-bold">Competitors’ Distinguishing Features:</p>
-            <ul>
+            <ul className="list-disc px-6">
               <li>High contrast Call To Action (CTA) buttons</li>
               <li>Frequent placement of CTA buttons throughout the site</li>
               <li>Footer serves as a good safety net for lost users</li>
               <li>Accordion format for FAQs, which reduces scroll</li>
             </ul>
           </div>
-          <div className="w-5/12 flex flex-row flex-wrap justify-between">
-            <Image src={competition1} alt="Lockbox company logo" />
-            <Image src={competition2} alt="Getout Omaha company logo" />
-            <Image src={competition3} alt="Breakout company logo" />
-            <Image src={competition4} alt="The Bureau company logo" />
+          {/* <div className="w-full flex flex-row flex-wrap justify-center sm:justify-between sm:w-5/12"> */}
+          {/* div styled as a 2x2 grid */}
+          <div className="max-w-[500px] grid grid-cols-2 gap-2 mt-4 md:mt-0">
+            <Image
+              src={competition1}
+              alt="Lockbox company logo"
+              className="py-2"
+            />
+            <Image
+              src={competition2}
+              alt="Getout Omaha company logo"
+              className="py-2"
+            />
+            <Image
+              src={competition3}
+              alt="Breakout company logo"
+              className="py-2"
+            />
+            <Image
+              src={competition4}
+              alt="The Bureau company logo"
+              className="py-2"
+            />
           </div>
         </div>
         <Section
