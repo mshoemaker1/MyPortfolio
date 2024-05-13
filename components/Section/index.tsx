@@ -5,6 +5,7 @@ interface SectionProps {
   header: string;
   content: string[];
   disableBottomPadding?: boolean;
+  bgColor?: "sand" | "neutral";
 }
 
 const Section = ({
@@ -12,12 +13,25 @@ const Section = ({
   header,
   content,
   disableBottomPadding = false,
+  bgColor,
 }: SectionProps) => {
+  const bg = () => {
+    switch (bgColor) {
+      case "sand":
+        return "bg-sand-500";
+      case "neutral":
+        return "bg-neutral-550";
+      default:
+        return "";
+    }
+  };
+
   return (
     <section
-      className={`flex flex-col px-10 py-20 md:flex-row md:px-40 md:py-30 ${
-        disableBottomPadding && "pb-0"
-      }`}
+      className={`flex flex-col px-10 py-20 md:flex-row md:px-40 md:py-30
+      ${bg()}
+      ${bgColor && "text-black"}
+      ${disableBottomPadding && "pb-0"}`}
     >
       <div className={`md:min-w-32 lg:min-w-56 ${title ? "mb-10" : ""}`}>
         <h5>{title?.toUpperCase()}</h5>
