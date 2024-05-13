@@ -2,10 +2,10 @@ import { data } from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
 import Image from "next/image";
-import aquaLogo from "../../../public/aqua-logo.jpg";
-import delanoLogo from "../../../public/delano-logo.jpg";
-import edinaLogo from "../../../public/edina-logo.jpg";
-import glendaleLogo from "../../../public/glendale-logo.jpg";
+import aquaLogo from "../../../public/richfield-july-4/aqua-logo.jpg";
+import delanoLogo from "../../../public/richfield-july-4/delano-logo.jpg";
+import edinaLogo from "../../../public/richfield-july-4/edina-logo.jpg";
+import glendaleLogo from "../../../public/richfield-july-4/glendale-logo.jpg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 

@@ -3,10 +3,10 @@ import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
 import { Divider } from "@/components/Divider";
 import Image from "next/image";
-import competition1 from "../../../public/group-6.png";
-import competition2 from "../../../public/group-7.png";
-import competition3 from "../../../public/group-8.png";
-import competition4 from "../../../public/group-9.png";
+import competition1 from "../../../public/trapped-downtown/group-6.png";
+import competition2 from "../../../public/trapped-downtown/group-7.png";
+import competition3 from "../../../public/trapped-downtown/group-8.png";
+import competition4 from "../../../public/trapped-downtown/group-9.png";
 import empathyMap from "../../../public/trapped-downtown/empathy-map.jpg";
 
 const projectData = data.find(
