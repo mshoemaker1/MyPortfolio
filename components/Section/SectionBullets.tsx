@@ -1,0 +1,45 @@
+import React from "react";
+
+export type Point = {
+  [key: string]: string;
+};
+
+interface SectionBulletsProps {
+  points: Point[] | string[];
+  bgColor?: "neutral";
+}
+
+const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
+  const bg = () => {
+    switch (bgColor) {
+      case "neutral":
+        return "bg-neutral-550 text-white";
+      default:
+        return "";
+    }
+  };
+
+  return (
+    <div
+      // lg:mx-56
+      className={`flex flex-col px-10 pb-20 md:flex-row md:pl-72 md:pr-32 md:pb-3 lg:px-96
+      ${bg()}`}
+    >
+      <ul className="list-disc px-6">
+        {points.map((point, index) => {
+          if (typeof point === "string") {
+            return <li key={index}>{point}</li>;
+          }
+          return (
+            <li key={index}>
+              <span className="font-bold">{Object.keys(point)[0]} - </span>
+              {Object.values(point)[0]}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+};
+
+export default SectionBullets;

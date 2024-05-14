@@ -115,6 +115,26 @@ export default function RichfieldJuly4() {
           ]}
         />
       </div>
+      <div className="bg-neutral-550 py-20">
+        <Divider borderColor="border-white" />
+        <Section
+          title="impact"
+          header="New site went live November 27, 2023 - Visit Now!"
+          content={[
+            "The site went live just in time for the committee to contact local businesses for consideration of year-end gifts. The committee was very happy with the website and the new site and rebrand received a lot of positive buzz on Facebook!",
+          ]}
+        />
+        <Divider borderColor="border-white" />
+        <Section
+          title="Reflect"
+          header="Learnings"
+          content={[
+            "I learned the importance (and power) of planning for staged releases of information on an event-based website. We were able to quickly design and build an MVP website without getting bogged down waiting on event details.",
+            "This was also the first time that I had done website building in Squarespace, so I learned about the process of moving from wireframes to building a website using a no code/low code product.",
+            "My mentor did a great job of modeling good user experience practices and I was so thankful to her for letting me join the project!",
+          ]}
+        />
+      </div>
     </main>
   );
 }

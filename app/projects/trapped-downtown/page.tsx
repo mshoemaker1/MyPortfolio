@@ -1,4 +1,8 @@
-import { data } from "../../projectData";
+import {
+  data,
+  trappedDowntownCurrentExperiencePoints,
+  trappedDowntownSiteMapPoints,
+} from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
 import { Divider } from "@/components/Divider";
@@ -15,6 +19,9 @@ import user4 from "../../../public/trapped-downtown/user-4.png";
 import user5 from "../../../public/trapped-downtown/user-5.png";
 import commonGroupings from "../../../public/trapped-downtown/common-groupings.png";
 import similarityMatrix from "../../../public/trapped-downtown/similarity-matrix.png";
+import SectionBullets from "@/components/Section/SectionBullets";
+import oldSiteMap from "../../../public/trapped-downtown/site-map-old.jpg";
+import newSiteMap from "../../../public/trapped-downtown/site-map-new.jpg";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -84,30 +91,7 @@ export default function TrappedDowntown() {
           ]}
           disableBottomPadding
         />
-        <div className="flex flex-col px-10 pb-20 md:flex-row md:px-40 md:pb-30 md:ml-32 lg:ml-56 ">
-          <ul className="list-disc px-6">
-            <li>
-              <span className="font-bold">Optimize navigation</span> - All
-              topics are on the same level and could benefit from a clearer
-              hierarchy.
-            </li>
-            <li>
-              <span className="font-bold">Prioritize mobile-first refresh</span>{" "}
-              - Each page is dense with content and CTA buttons are
-              inconsistent. 60% of users visit the website using a mobile phone.
-            </li>
-            <li>
-              <span className="font-bold">Create consistent layouts</span> -
-              Small adjustments could have a big impact including adding a
-              consistent margin to enhance readability.
-            </li>
-            <li>
-              <span className="font-bold">Create homepage</span> - Add a
-              homepage that has critical information and easily directs users
-              where to find more information.
-            </li>
-          </ul>
-        </div>
+        <SectionBullets points={trappedDowntownCurrentExperiencePoints} />
         <Section
           header="What do people think, feel, and do when booking events in advance?"
           content={[
@@ -115,19 +99,21 @@ export default function TrappedDowntown() {
             "Following the interviews, I reviewed the notes and created an Empathy Map to better understand the perspective of our users.",
           ]}
         />
-        <div className="bg-sand-500 flex flex-col items-center py-20 relative">
-          <Image
-            src={empathyMap}
-            alt="Post it note empathy map"
-            className="drop-shadow-md"
-          />
-          <h3 className="font-[32px] mt-12 text-black px-8 text-center">
-            “Websites are astonishingly unclear.
-          </h3>
-          <h3 className="font-[32px] text-black mt-0 px-8 text-center">
-            How do I get to the place where I actually buy the ticket?”
-          </h3>
-        </div>
+      </div>
+      <div className="bg-sand-500 flex flex-col items-center py-20 relative">
+        <Image
+          src={empathyMap}
+          alt="Post it note empathy map"
+          className="drop-shadow-md"
+        />
+        <h3 className="font-[32px] mt-12 text-black px-8 text-center">
+          “Websites are astonishingly unclear.
+        </h3>
+        <h3 className="font-[32px] text-black mt-0 px-8 text-center">
+          How do I get to the place where I actually buy the ticket?”
+        </h3>
+      </div>
+      <div>
         <Divider />
         <Section
           title="Ideate"
@@ -179,6 +165,8 @@ export default function TrappedDowntown() {
             />
           </div>
         </div>
+      </div>
+      <div>
         <Section
           header="Patterns emerge for a streamlined site map"
           content={[
@@ -205,41 +193,84 @@ export default function TrappedDowntown() {
             />
           </div>
         </div>
+      </div>
+      <div>
         <Section
           header="Building a new site map"
           content={["Key changes included:"]}
           disableBottomPadding
         />
-        <div className="flex flex-col px-10 pb-20 md:flex-row md:px-40 md:pb-30 md:ml-32 lg:ml-56 ">
-          <ul className="list-disc px-6">
-            <li>
-              <span className="font-bold">Add Homepage</span> - Adding a
-              homepage gives users high priority information quickly (ex. price,
-              hours of operation) and a Book Now CTA. Homepage also serves as a
-              central hub for directing users to more information.
-            </li>
-            <li>
-              <span className="font-bold">Redesign CTA button</span> - Book Now
-              CTA redesigned as a stand-alone button vs blending in with the
-              other menu items.
-            </li>
-            <li>
-              <span className="font-bold">Streamline Content</span> - Organized
-              content into 3 groups which enables a ‘right information at the
-              right time' flow to the website.
-            </li>
-            <li>
-              <span className="font-bold">Update Footer</span> - Added relevant
-              information and quick links to site footer to help users navigate
-              the website.
-            </li>
-          </ul>
+        <SectionBullets points={trappedDowntownSiteMapPoints} />
+        <div className="flex flex-row flex-wrap justify-center">
+          <div className="flex flex-col items-start m-6">
+            <p>Old Site Map</p>
+            <Image
+              src={oldSiteMap}
+              alt="Old site map"
+              className="w-[377px] drop-shadow-md rounded-lg"
+            />
+          </div>
+          <div className="flex flex-col items-start m-6">
+            <p>New Site Map</p>
+            <Image
+              src={newSiteMap}
+              alt="New site map"
+              className="w-[377px] drop-shadow-md rounded-lg"
+            />
+          </div>
         </div>
         <Section
           header="Bringing the Stakeholders along on the journey"
           content={[
             "Before shifting to ideation, I met with the stakeholders to share the research and get their reactions to the new site map. They were generally supportive but there was a pivotal aha moment when I showed the competitors' mobile homescreen next to Trapped Downtown's mobile homescreen - they were able to step out of their understanding of their own website and really get in the user's shoes and see it with fresh eyes.",
           ]}
+        />
+        <Section
+          header="Sketching wireframes; a mobile-first experience"
+          content={[
+            "With the blessing of our stakeholders, I collected all of the insights from research and the new site map and started sketching. I sketched multiple versions of each screen and refined until I was happy with the look and feel of each screen.",
+          ]}
+        />
+        <Divider />
+        <Section
+          title="Iterate"
+          header="Opportunities for improving the user experience"
+          content={[
+            " I conducted user testing on the high fidelity mock-ups. I chose the 5-second test framework but modified it for this specific product. Users viewed an image of the Home screen for 15 seconds, then were asked two questions:",
+          ]}
+          disableBottomPadding
+        />
+        <SectionBullets
+          points={[
+            "What are elements that you recall?",
+            "What would you change about the design?",
+          ]}
+        />
+      </div>
+      <div className="bg-neutral-550 py-20">
+        <Section
+          title="Results"
+          header="Updated site went live May 3"
+          content={[
+            "I worked with a developer to implement the designs. The newly designed website went live on May 3rd and I'll be checking back to see the impact of the updates over time.",
+          ]}
+          bgColor="neutral"
+        />
+        <Divider borderColor="border-white" />
+        <Section
+          title="Reflect"
+          header="Learnings"
+          content={[""]}
+          disableBottomPadding
+          bgColor="neutral"
+        />
+        <SectionBullets
+          points={[
+            "I wish I would have added 1-2 analogous competitors to my Competitive Analysis. I think we could have learned how different types of entertainment offerings serve their users instead of just looking at other escape room businesses.",
+            "Upon reflection, I think the final product could have been stronger if I had conducted a different type of user testing. I would do  a moderated user testing session with a small number of users. This could have confirmed (or complicated) the information architecture, which had undergone a lot of change.",
+            "To further strengthen the utility of the my designs, I want to take a class on SEO optimization.",
+          ]}
+          bgColor="neutral"
         />
       </div>
     </main>

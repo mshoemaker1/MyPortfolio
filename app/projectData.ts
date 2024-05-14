@@ -7,6 +7,7 @@ import heroLittleCup from "../public/little-cup/hero-little-cup.jpg";
 import handshake from "../public/handshake-icon.png";
 import dottedGrid from "../public/dotted-grid-icon.png";
 import people from "../public/people-icon.png";
+import { Point } from "@/components/Section/SectionBullets";
 
 export const data = [
   {
@@ -119,3 +120,17 @@ export const richfieldResearchSquares = [
       "The website will serve as a hub for gathering donations, signing up volunteers and vendors, and event details.",
   },
 ];
+
+export const trappedDowntownCurrentExperiencePoints: Point[] = [
+  {"Optimize navigation": "All topics are on the same level and could benefit from a clearer hierarchy."},
+  {"Prioritize mobile-first refresh": "Each page is dense with content and CTA buttons are inconsistent. 60% of users visit the website using a mobile phone."},
+  {"Create consistent layouts": "Small adjustments could have a big impact including adding a consistent margin to enhance readability."},
+  {"Create homepage": "Add a homepage that has critical information and easily directs users where to find more information."},
+]
+
+export const trappedDowntownSiteMapPoints: Point[] = [
+  {"Add Homepage": "Adding a homepage gives users high priority information quickly (ex. price, hours of operation) and a Book Now CTA. Homepage also serves as a central hub for directing users to more information."},
+  {"Redesign CTA button": "Book Now CTA redesigned as a stand-alone button vs blending in with the other menu items."},
+  {"Streamline Content": "Organized content into 3 groups which enables a ‘right information at the right time' flow to the website."},
+  {"Update Footer": "Added relevant information and quick links to site footer to help users navigate the website."},
+]

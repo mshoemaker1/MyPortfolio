@@ -25,7 +25,7 @@ const ProjectHero = ({ bulletPoints, content }: HeroContentProps) => {
           </div>
         ))}
       </div>
-      <div className="flex flex-col md:ml-[10%]">
+      <div className="flex flex-col md:ml-[10%] lg:mr-56">
         {Object.keys(content).map((key) => (
           <div key={key} className="mb-4">
             <h3 className="mb-1">{capitalize(key)}</h3>
