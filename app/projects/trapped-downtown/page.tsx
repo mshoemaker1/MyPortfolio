@@ -2,8 +2,10 @@ import {
   data,
   trappedDowntownCurrentExperiencePoints,
   trappedDowntownSiteMapPoints,
+  trappedDowntownCircles,
 } from "../../projectData";
 import Section from "@/components/Section";
+import SectionBullets from "@/components/Section/SectionBullets";
 import HeroHeader from "@/components/HeroHeader";
 import { Divider } from "@/components/Divider";
 import Image from "next/image";
@@ -19,7 +21,6 @@ import user4 from "../../../public/trapped-downtown/user-4.png";
 import user5 from "../../../public/trapped-downtown/user-5.png";
 import commonGroupings from "../../../public/trapped-downtown/common-groupings.png";
 import similarityMatrix from "../../../public/trapped-downtown/similarity-matrix.png";
-import SectionBullets from "@/components/Section/SectionBullets";
 import oldSiteMap from "../../../public/trapped-downtown/site-map-old.jpg";
 import newSiteMap from "../../../public/trapped-downtown/site-map-new.jpg";
 
@@ -106,10 +107,24 @@ export default function TrappedDowntown() {
           alt="Post it note empathy map"
           className="drop-shadow-md"
         />
-        <h3 className="font-[32px] mt-12 text-black px-8 text-center">
+        {/* <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex"> */}
+        {/* 2x2 grid on devices under large size */}
+        <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex">
+          {trappedDowntownCircles.map((circle, index) => (
+            <div
+              key={index}
+              className={`flex lg:absolute w-[170px] h-[170px] bg-white rounded-full items-center justify-center ${circle.x} ${circle.y}`}
+            >
+              <p className="text-black text-[18px] text-center px-3">
+                {circle.text}
+              </p>
+            </div>
+          ))}
+        </div>
+        <h3 className="text-center px-10 font-[32px] mt-12 text-black">
           “Websites are astonishingly unclear.
         </h3>
-        <h3 className="font-[32px] text-black mt-0 px-8 text-center">
+        <h3 className="text-center px-10 font-[32px] text-black mt-0">
           How do I get to the place where I actually buy the ticket?”
         </h3>
       </div>
@@ -236,7 +251,7 @@ export default function TrappedDowntown() {
           title="Iterate"
           header="Opportunities for improving the user experience"
           content={[
-            " I conducted user testing on the high fidelity mock-ups. I chose the 5-second test framework but modified it for this specific product. Users viewed an image of the Home screen for 15 seconds, then were asked two questions:",
+            "I conducted user testing on the high fidelity mock-ups. I chose the 5-second test framework but modified it for this specific product. Users viewed an image of the Home screen for 15 seconds, then were asked two questions:",
           ]}
           disableBottomPadding
         />

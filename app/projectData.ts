@@ -134,3 +134,10 @@ export const trappedDowntownSiteMapPoints: Point[] = [
   {"Streamline Content": "Organized content into 3 groups which enables a ‘right information at the right time' flow to the website."},
   {"Update Footer": "Added relevant information and quick links to site footer to help users navigate the website."},
 ]
+
+export const trappedDowntownCircles = [
+  { x: "right-[calc(50%+430px)]", y: "top-[calc(50%-320px)]", text: 'Make “Book Now” action easy to find'},
+  { x: "right-[calc(50%+340px)]", y: "bottom-[calc(50%-200px)]", text: 'Showcase external validation on website'},
+  { x: "left-[calc(50%+400px)]", y: "top-[calc(50%-220px)]", text: 'Show WHO this experience is for'},
+  { x: "left-[calc(50%+370px)]", y: "bottom-[calc(50%-250px)]", text: 'Remove group planning friction'},
+]
