@@ -23,6 +23,7 @@ import commonGroupings from "../../../public/trapped-downtown/common-groupings.p
 import similarityMatrix from "../../../public/trapped-downtown/similarity-matrix.png";
 import oldSiteMap from "../../../public/trapped-downtown/site-map-old.jpg";
 import newSiteMap from "../../../public/trapped-downtown/site-map-new.jpg";
+import aha from "../../../public/trapped-downtown/aha-moment.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -107,8 +108,6 @@ export default function TrappedDowntown() {
           alt="Post it note empathy map"
           className="drop-shadow-md"
         />
-        {/* <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex"> */}
-        {/* 2x2 grid on devices under large size */}
         <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex">
           {trappedDowntownCircles.map((circle, index) => (
             <div
@@ -240,6 +239,24 @@ export default function TrappedDowntown() {
             "Before shifting to ideation, I met with the stakeholders to share the research and get their reactions to the new site map. They were generally supportive but there was a pivotal aha moment when I showed the competitors' mobile homescreen next to Trapped Downtown's mobile homescreen - they were able to step out of their understanding of their own website and really get in the user's shoes and see it with fresh eyes.",
           ]}
         />
+        <div className="flex justify-center">
+          <div className="bg-sand-500 rounded-lg px-10 py-20 lg:flex-row lg:w-9/12">
+            <div className="flex flex-col lg:flex-row items-center">
+              <Image
+                src={aha}
+                alt="5 mobile devices screens showing competitors' and Trapped Downtown's home screens"
+                className="drop-shadow-md flex-1 mx-8 mb-8 lg:mb-0"
+              />
+              <h3 className="text-[26px] lg:text-[30px] text-black flex-1 mx-8 text-center lg:text-right">
+                “Whoa. Now I understand. What are our users supposed to do?
+                Help!”
+                <h4 className="text-[16px] lg:text-[18px]">
+                  - Key Stakeholder
+                </h4>
+              </h3>
+            </div>
+          </div>
+        </div>
         <Section
           header="Sketching wireframes; a mobile-first experience"
           content={[
