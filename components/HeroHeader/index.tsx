@@ -26,7 +26,12 @@ const HeroHeader = ({
   return (
     <>
       <Header path={path} bgColor={bg} />
-      <Image className="w-full" src={heroImage} alt={heroAlt} />
+      <Image
+        className="w-full"
+        src={heroImage}
+        alt={heroAlt}
+        placeholder="blur"
+      />
       <ProjectHero bulletPoints={heroBulletPoints} content={heroContent} />
     </>
   );

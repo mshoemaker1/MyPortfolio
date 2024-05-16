@@ -22,6 +22,7 @@ export default function About() {
             className="rounded-lg"
             width={200}
             height={200}
+            placeholder="blur"
           />
         </div>
       </div>

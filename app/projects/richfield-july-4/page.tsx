@@ -43,24 +43,28 @@ export default function RichfieldJuly4() {
             alt="Glendale 4th of July Logo"
             height={120}
             className="my-4 mx-1 drop-shadow-md"
+            placeholder="blur"
           />
           <Image
             src={edinaLogo}
             alt="Edina Art Fair Logo"
             height={120}
             className="my-4 mx-1 drop-shadow-md"
+            placeholder="blur"
           />
           <Image
             src={aquaLogo}
             alt="Minneapolis Aquatennial Logo"
             height={120}
             className="my-4 mx-1 drop-shadow-md"
+            placeholder="blur"
           />
           <Image
             src={delanoLogo}
             alt="Delano 4th of July Logo"
             height={120}
             className="my-4 mx-1 drop-shadow-md"
+            placeholder="blur"
           />
         </div>
         <Section
@@ -86,6 +90,7 @@ export default function RichfieldJuly4() {
                 src={square.image}
                 alt={square.alt}
                 className="w-6 md:w-8"
+                placeholder="blur"
               />
               <p className="font-bold mt-3">{square.title}</p>
               <p>{square.description}</p>

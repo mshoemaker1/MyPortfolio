@@ -31,6 +31,7 @@ const ProjectCard = ({
         className="w-96 h-96 object-cover"
         width={400}
         height={400}
+        placeholder="blur"
       />
     </Link>
   );

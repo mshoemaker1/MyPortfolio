@@ -67,21 +67,25 @@ export default function TrappedDowntown() {
                 src={competition1}
                 alt="Lockbox company logo"
                 className="py-2 drop-shadow-md"
+                placeholder="blur"
               />
               <Image
                 src={competition2}
                 alt="Getout Omaha company logo"
                 className="py-2 drop-shadow-md"
+                placeholder="blur"
               />
               <Image
                 src={competition3}
                 alt="Breakout company logo"
                 className="py-2 drop-shadow-md"
+                placeholder="blur"
               />
               <Image
                 src={competition4}
                 alt="The Bureau company logo"
                 className="py-2 drop-shadow-md"
+                placeholder="blur"
               />
             </div>
           </div>
@@ -107,6 +111,7 @@ export default function TrappedDowntown() {
           src={empathyMap}
           alt="Post it note empathy map"
           className="drop-shadow-md"
+          placeholder="blur"
         />
         <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex">
           {trappedDowntownCircles.map((circle, index) => (
@@ -144,6 +149,7 @@ export default function TrappedDowntown() {
               src={user1}
               alt="User 1 card sort"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="mx-6 my-4">
@@ -152,6 +158,7 @@ export default function TrappedDowntown() {
               src={user2}
               alt="User 2 card sort"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="mx-6 my-4">
@@ -160,6 +167,7 @@ export default function TrappedDowntown() {
               src={user3}
               alt="User 3 card sort"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="mx-6 my-4">
@@ -168,6 +176,7 @@ export default function TrappedDowntown() {
               src={user4}
               alt="User 4 card sort"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="mx-6 my-4">
@@ -176,6 +185,7 @@ export default function TrappedDowntown() {
               src={user5}
               alt="User 5 card sort"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -196,6 +206,7 @@ export default function TrappedDowntown() {
               src={commonGroupings}
               alt="Common groupings"
               className="w-[850px]"
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col items-center">
@@ -204,6 +215,7 @@ export default function TrappedDowntown() {
               src={similarityMatrix}
               alt="Similarity matrix"
               className="w-[850px]"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -222,6 +234,7 @@ export default function TrappedDowntown() {
               src={oldSiteMap}
               alt="Old site map"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="flex flex-col items-start m-6">
@@ -230,6 +243,7 @@ export default function TrappedDowntown() {
               src={newSiteMap}
               alt="New site map"
               className="w-[377px] drop-shadow-md rounded-lg"
+              placeholder="blur"
             />
           </div>
         </div>
@@ -246,6 +260,7 @@ export default function TrappedDowntown() {
                 src={aha}
                 alt="5 mobile devices screens showing competitors' and Trapped Downtown's home screens"
                 className="drop-shadow-md flex-1 mx-8 mb-8 lg:mb-0"
+                placeholder="blur"
               />
               <h3 className="text-[26px] lg:text-[30px] text-black flex-1 mx-8 text-center lg:text-right">
                 “Whoa. Now I understand. What are our users supposed to do?
