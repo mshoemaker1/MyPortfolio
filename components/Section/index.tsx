@@ -2,8 +2,8 @@ import React from "react";
 
 interface SectionProps {
   title?: string;
-  header: string;
-  content: string[];
+  header?: string;
+  content?: string[];
   disableBottomPadding?: boolean;
   bgColor?: "sand" | "neutral";
 }
@@ -37,11 +37,12 @@ const Section = ({
       </div>
       <div className="lg:mr-56">
         <h3 className="mb-4">{header}</h3>
-        {content.map((paragraph, index) => (
-          <p key={index} className="mb-4">
-            {paragraph}
-          </p>
-        ))}
+        {content &&
+          content.map((paragraph, index) => (
+            <p key={index} className="mb-4">
+              {paragraph}
+            </p>
+          ))}
       </div>
     </section>
   );

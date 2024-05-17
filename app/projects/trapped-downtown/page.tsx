@@ -24,6 +24,10 @@ import similarityMatrix from "../../../public/trapped-downtown/similarity-matrix
 import oldSiteMap from "../../../public/trapped-downtown/site-map-old.jpg";
 import newSiteMap from "../../../public/trapped-downtown/site-map-new.jpg";
 import aha from "../../../public/trapped-downtown/aha-moment.png";
+import finalDesign1 from "../../../public/trapped-downtown/final-design-1.png";
+import finalDesign2 from "../../../public/trapped-downtown/final-design-2.png";
+import finalDesign3 from "../../../public/trapped-downtown/final-design-3.png";
+import finalDesign4 from "../../../public/trapped-downtown/final-design-4.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -254,7 +258,7 @@ export default function TrappedDowntown() {
           ]}
         />
         <div className="flex justify-center">
-          <div className="bg-sand-500 rounded-lg px-10 py-20 lg:flex-row lg:w-9/12">
+          <div className="bg-sand-500 md:rounded-lg px-10 py-20 lg:flex-row lg:w-9/12">
             <div className="flex flex-col lg:flex-row items-center">
               <Image
                 src={aha}
@@ -295,6 +299,34 @@ export default function TrappedDowntown() {
         />
       </div>
       <div className="bg-neutral-550 py-20">
+        <Section title="Final design" disableBottomPadding />
+        <div className="flex flex-row flex-wrap justify-center">
+          <Image
+            src={finalDesign1}
+            alt="Final design 1"
+            placeholder="blur"
+            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
+          />
+          <Image
+            src={finalDesign2}
+            alt="Final design 2"
+            placeholder="blur"
+            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
+          />
+          <Image
+            src={finalDesign3}
+            alt="Final design 3"
+            placeholder="blur"
+            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
+          />
+          <Image
+            src={finalDesign4}
+            alt="Final design 4"
+            placeholder="blur"
+            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
+          />
+        </div>
+        <Divider borderColor="border-white" />
         <Section
           title="Results"
           header="Updated site went live May 3"
