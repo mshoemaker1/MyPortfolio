@@ -29,6 +29,13 @@ import finalDesign2 from "../../../public/trapped-downtown/final-design-2.png";
 import finalDesign3 from "../../../public/trapped-downtown/final-design-3.png";
 import finalDesign4 from "../../../public/trapped-downtown/final-design-4.png";
 import versionGrid from "../../../public/trapped-downtown/version-grid.png";
+import wireframe1 from "../../../public/trapped-downtown/wireframe-1.png";
+import wireframe2 from "../../../public/trapped-downtown/wireframe-2.png";
+import wireframe3 from "../../../public/trapped-downtown/wireframe-3.png";
+import wireframesHome from "../../../public/trapped-downtown/wireframes-home.png";
+import wireframesContact from "../../../public/trapped-downtown/wireframes-contact.png";
+import wireframesEvents from "../../../public/trapped-downtown/wireframes-events.png";
+import shapedRectangle from "../../../public/trapped-downtown/shaped-rectangle.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -283,6 +290,79 @@ export default function TrappedDowntown() {
             "With the blessing of our stakeholders, I collected all of the insights from research and the new site map and started sketching. I sketched multiple versions of each screen and refined until I was happy with the look and feel of each screen.",
           ]}
         />
+        <div className="flex flex-row mb-12 md:mb-16 lg:mb-[74px] mx-12 lg:mx-48 justify-around">
+          <div className="mx-2">
+            <p className="text-center">HOME SCREEN</p>
+            <div className="relative p-4">
+              <Image
+                className="absolute top-0 left-0 -z-10"
+                src={shapedRectangle}
+                alt="Shaped rectangle pointing down"
+              />
+              <Image
+                src={wireframesHome}
+                alt="Home screen wireframes"
+                placeholder="blur"
+                className="w-[295px]"
+              />
+            </div>
+          </div>
+          <div className="mx-2">
+            <p className="text-center">CONTACT US SCREEN</p>
+            <div className="relative p-4">
+              <Image
+                className="absolute top-0 left-0 -z-10"
+                src={shapedRectangle}
+                alt="Shaped rectangle pointing down"
+              />
+              <Image
+                src={wireframesContact}
+                alt="Contact screen wireframes"
+                placeholder="blur"
+                className="w-[295px]"
+              />
+            </div>
+          </div>
+          <div className="mx-2">
+            <p className="text-center">EVENTS & GIFTS SCREEN</p>
+            <div className="relative p-4">
+              <Image
+                className="absolute top-0 left-0 -z-10"
+                src={shapedRectangle}
+                alt="Shaped rectangle pointing down"
+              />
+              <Image
+                src={wireframesEvents}
+                alt="Events screen wireframes"
+                placeholder="blur"
+                className="w-[295px]"
+              />
+            </div>
+          </div>
+        </div>
+        <div className="flex flex-row bg-sand-500 justify-around py-8 px-12 lg:px-24 relative lg:mx-24 lg:rounded-lg">
+          <p className="absolute top-32 -left-10 lg:top-56 lg:left-0 text-black -rotate-90">
+            FINAL SKETCHES
+          </p>
+          <Image
+            src={wireframe1}
+            alt="Paper wireframe 1"
+            placeholder="blur"
+            className="max-w-[100px] max-h-[234px] md:max-w-[199px] md:max-h-[468px]"
+          />
+          <Image
+            src={wireframe2}
+            alt="Paper wireframe 2"
+            placeholder="blur"
+            className="max-w-[96px] max-h-[206px] md:max-w-[191px] md:max-h-[412px]"
+          />
+          <Image
+            src={wireframe3}
+            alt="Paper wireframe 3"
+            placeholder="blur"
+            className="max-w-[99px] max-h-[200px] md:max-w-[198px] md:max-h-[400px]"
+          />
+        </div>
         <Divider />
         <Section
           title="Iterate"
