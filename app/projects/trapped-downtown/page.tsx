@@ -28,6 +28,7 @@ import finalDesign1 from "../../../public/trapped-downtown/final-design-1.png";
 import finalDesign2 from "../../../public/trapped-downtown/final-design-2.png";
 import finalDesign3 from "../../../public/trapped-downtown/final-design-3.png";
 import finalDesign4 from "../../../public/trapped-downtown/final-design-4.png";
+import versionGrid from "../../../public/trapped-downtown/version-grid.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -297,6 +298,32 @@ export default function TrappedDowntown() {
             "What would you change about the design?",
           ]}
         />
+        <div className="flex flex-col mt-16 mb-36 lg:mx-24 lg:flex-row">
+          <div>
+            <div className="flex flex-row">
+              <p className="mr-[calc(54%-98px)] md:mr-[calc(54%-110px)]">
+                Tested Version
+              </p>
+              <p>Final Version</p>
+            </div>
+            <Image src={versionGrid} alt="Version grid" />
+          </div>
+          <div className="flex flex-col mt-8 lg:mt-0 lg:justify-around">
+            <ul className="list-disc ml-16">
+              <li>Need consistent use of icons and colors</li>
+              <li>
+                Unclear WHO participates in this type of activity so replaced
+                minimum age information with participant information
+              </li>
+            </ul>
+            <ul className="list-disc ml-16">
+              <li>
+                Color palette needed to be reworked as it reminded users of
+                Christmas colors
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <div className="bg-neutral-550 py-20">
         <Section title="Final design" disableBottomPadding />
