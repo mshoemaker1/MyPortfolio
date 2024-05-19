@@ -36,6 +36,8 @@ import wireframesHome from "../../../public/trapped-downtown/wireframes-home.png
 import wireframesContact from "../../../public/trapped-downtown/wireframes-contact.png";
 import wireframesEvents from "../../../public/trapped-downtown/wireframes-events.png";
 import shapedRectangle from "../../../public/trapped-downtown/shaped-rectangle.png";
+import originalHome from "../../../public/trapped-downtown/original-home.png";
+import newHome from "../../../public/trapped-downtown/new-home.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -442,6 +444,40 @@ export default function TrappedDowntown() {
           ]}
           bgColor="neutral"
         />
+        <div className="flex flex-row mx-12 lg:mx-48 justify-around">
+          <div className="mx-2">
+            <p>Original Landing Page</p>
+            <div className="rounded-lg overflow-y-scroll w-[300px] h-[500px] mt-1">
+              <Image
+                src={originalHome}
+                alt="Long image"
+                placeholder="blur"
+                className="w-full"
+              />
+            </div>
+          </div>
+          <div className="mx-2">
+            <p>
+              Updated Home Page -{" "}
+              <a
+                target="_blank"
+                href="https://www.trappeddowntown.com/"
+                className="text-[#000EEE] font-bold hover:underline hover:underline-offset-4 hover:decoration-[3px]"
+                rel="noopener noreferrer"
+              >
+                Visit Now
+              </a>
+            </p>
+            <div className="rounded-lg overflow-y-scroll w-[300px] h-[500px] mt-1">
+              <Image
+                src={newHome}
+                alt="Long image"
+                placeholder="blur"
+                className="w-full"
+              />
+            </div>
+          </div>
+        </div>
         <Divider borderColor="border-white" />
         <Section
           title="Reflect"
