@@ -390,7 +390,7 @@ export default function TrappedDowntown() {
             </div>
             <Image src={versionGrid} alt="Version grid" />
           </div>
-          <div className="flex flex-col mt-8 lg:mt-0 lg:justify-around">
+          <div className="flex flex-col mt-8 mr-8 lg:mr-0 lg:mt-0 lg:justify-around">
             <ul className="list-disc ml-16">
               <li>Need consistent use of icons and colors</li>
               <li>
@@ -444,8 +444,8 @@ export default function TrappedDowntown() {
           ]}
           bgColor="neutral"
         />
-        <div className="flex flex-row mx-12 lg:mx-48 justify-around">
-          <div className="mx-2">
+        <div className="flex flex-row flex-wrap mx-12 lg:mx-48 justify-around">
+          <div className="mx-2 my-10">
             <p className="text-white">Original Landing Page</p>
             <div className="rounded-lg overflow-y-scroll w-[300px] h-[500px] mt-1">
               <Image
@@ -456,7 +456,7 @@ export default function TrappedDowntown() {
               />
             </div>
           </div>
-          <div className="mx-2">
+          <div className="mx-2 my-10">
             <p className="text-white">
               Updated Home Page -{" "}
               <a
