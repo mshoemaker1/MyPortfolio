@@ -408,7 +408,7 @@ export default function TrappedDowntown() {
         </div>
       </div>
       <div className="bg-neutral-550 py-20">
-        <Section title="Final design" disableBottomPadding />
+        <Section title="Final design" bgColor="neutral" disableBottomPadding />
         <div className="flex flex-row flex-wrap justify-center">
           <Image
             src={finalDesign1}
@@ -446,7 +446,7 @@ export default function TrappedDowntown() {
         />
         <div className="flex flex-row mx-12 lg:mx-48 justify-around">
           <div className="mx-2">
-            <p>Original Landing Page</p>
+            <p className="text-white">Original Landing Page</p>
             <div className="rounded-lg overflow-y-scroll w-[300px] h-[500px] mt-1">
               <Image
                 src={originalHome}
@@ -457,7 +457,7 @@ export default function TrappedDowntown() {
             </div>
           </div>
           <div className="mx-2">
-            <p>
+            <p className="text-white">
               Updated Home Page -{" "}
               <a
                 target="_blank"
