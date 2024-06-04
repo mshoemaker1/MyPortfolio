@@ -1,6 +1,6 @@
-import projectImage1 from "../public/sample-project-001.jpeg";
-import projectImage2 from "../public/sample-project-002.jpeg";
-import projectImage3 from "../public/sample-project-003.jpeg";
+import homeTrappedDowntown from "../public/trapped-downtown/home-trapped-downtown.jpg";
+import homeRichfield from "../public/richfield-july-4/home-richfield.jpg";
+import homeLittleCup from "../public/little-cup/home-little-cup.jpg";
 import heroImageTrappedDowntown from "../public/trapped-downtown/hero-trapped-downtown.jpg";
 import heroImageRichfield from "../public/richfield-july-4/hero-richfield.jpg";
 import heroLittleCup from "../public/little-cup/hero-little-cup.jpg";
@@ -13,7 +13,7 @@ export const data = [
   {
     title: "Unlocking more bookings",
     description: "Refreshing the Trapped Downtown website",
-    image: projectImage3,
+    image: homeTrappedDowntown,
     bg: "bg-sand-500",
     path: "/projects/trapped-downtown",
     tags: ["Freelance", "Entertainment"],
@@ -39,7 +39,7 @@ export const data = [
   {
     title: "Rebuilding Trust",
     description: "Designing the Richfield 4th of July website",
-    image: projectImage2,
+    image: homeRichfield,
     bg: "bg-lavender-500",
     path: "/projects/richfield-july-4",
     tags: ["Volunteer", "Community", "Events"],
@@ -72,7 +72,7 @@ export const data = [
   {
     title: "Finding the perfect coffee shop",
     description: "Designing Little Cup, a responsive website",
-    image: projectImage1,
+    image: homeLittleCup,
     bg: "bg-bronze-500",
     path: "/projects/little-cup",
     tags: ["Case study", "social", "consumer services"],
