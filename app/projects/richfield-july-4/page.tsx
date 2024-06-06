@@ -10,6 +10,7 @@ import RectangleFlag from "../../../public/richfield-july-4/rectangle-flag.svg";
 import wireframe from "../../../public/richfield-july-4/wireframe.png";
 import homePageHifi from "../../../public/richfield-july-4/homepage-hifi.png";
 import aboutHifi from "../../../public/richfield-july-4/about-hifi.png";
+import textBubble from "../../../public/richfield-july-4/ellipse.svg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 
@@ -210,6 +211,22 @@ export default function RichfieldJuly4() {
             "The site went live just in time for the committee to contact local businesses for consideration of year-end gifts. The committee was very happy with the website and the new site and rebrand received a lot of positive buzz on Facebook!",
           ]}
         />
+        <div className="text-black relative max-w-[459px] h-[130px] ml-[5%] sm:ml-[15%] md:ml-[20%]">
+          <Image src={textBubble} alt="Text Bubble" className="absolute" />
+          <div className="absolute inset-0 flex flex-col justify-center items-center">
+            <h4>“Wow this looks so good!”</h4>
+            <p>-Andrea, Committee Member</p>
+          </div>
+        </div>
+        <div className="w-full flex flex-row-reverse mt-2">
+          <div className="text-black relative w-[459px] h-[130px] mr-[5%] sm:mr-[15%] md:mr-[20%]">
+            <Image src={textBubble} alt="Text Bubble" className="absolute" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center">
+              <h4>“Thanks for all your work on this!!!”</h4>
+              <p>-Laurie H, Richfield resident</p>
+            </div>
+          </div>
+        </div>
         <Divider borderColor="border-white" />
         <Section
           title="Reflect"
