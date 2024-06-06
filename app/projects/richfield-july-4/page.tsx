@@ -8,6 +8,8 @@ import edinaLogo from "../../../public/richfield-july-4/edina-logo.jpg";
 import glendaleLogo from "../../../public/richfield-july-4/glendale-logo.jpg";
 import RectangleFlag from "../../../public/richfield-july-4/rectangle-flag.svg";
 import wireframe from "../../../public/richfield-july-4/wireframe.png";
+import homePageHifi from "../../../public/richfield-july-4/homepage-hifi.png";
+import aboutHifi from "../../../public/richfield-july-4/about-hifi.png";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 
@@ -183,6 +185,23 @@ export default function RichfieldJuly4() {
         />
       </div>
       <div className="bg-neutral-550 py-20">
+        <Section title="Final design" bgColor="neutral" disableBottomPadding />
+        <div className="flex flex-row flex-wrap justify-center items-start">
+          <div className="relative w-3/4 max-w-[500px] mx-8 my-4 sm:w-[35%]">
+            <Image
+              src={homePageHifi}
+              alt="Home Page Hi-Fi"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <div className="relative w-3/4 max-w-[500px] mx-8 my-4 sm:w-[35%]">
+            <Image
+              src={aboutHifi}
+              alt="About Page Hi-Fi"
+              className="w-full h-full object-contain"
+            />
+          </div>
+        </div>
         <Divider borderColor="border-white" />
         <Section
           title="impact"
