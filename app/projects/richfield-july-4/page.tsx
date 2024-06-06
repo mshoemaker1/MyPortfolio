@@ -7,6 +7,7 @@ import delanoLogo from "../../../public/richfield-july-4/delano-logo.jpg";
 import edinaLogo from "../../../public/richfield-july-4/edina-logo.jpg";
 import glendaleLogo from "../../../public/richfield-july-4/glendale-logo.jpg";
 import RectangleFlag from "../../../public/richfield-july-4/rectangle-flag.svg";
+import wireframe from "../../../public/richfield-july-4/wireframe.png";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 
@@ -160,6 +161,11 @@ export default function RichfieldJuly4() {
           content={[
             "The team spent a session designing paper wireframes to kickoff the design process. We knew we would be limited by the functions of Squarespace, but we did not let that hold back our creativity as we did our first sketches.",
           ]}
+        />
+        <Image
+          src={wireframe}
+          alt="Wireframe drawings"
+          className="w-full max-w-[760px] self-center"
         />
         <Section
           header="Lo-Fi Wireframes"
