@@ -80,13 +80,13 @@ export const data = [
       image: heroLittleCup,
       alt: "Computer on a desk",
       bulletPoints: {
-        role: ["UX Designer", "Project Manager"],
-        tools: ["Figma", "Card Sort", "Google Suite"],
-        when: ["5 weeks,", "March - April 2024"],
+        role: ["UX Designer"],
+        tools: ["Figma"],
+        when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
       },
       content: {
-        challenge: "Trapped Downtown wants to increase their bookings. They've tried marketing in a few places locally but haven't seen enough of an increase in bookings.",
-        goal: "Targeted refresh of website to be mobile-first while maintaining current branding.",
+        challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation, leading to a cluttered map and overwhelming list of recommendations for users.",
+        goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
         process: [
           "My ideal process to address this challenge starts with a discovery phase where I learn as much as I can about the business itself, and start to dig in to the nuances of the industry. Then I plan to get to know users and their motivations.",
           "Once I have grounded myself with that information, I will evaluate the structure of information on the website to ensure there is a good foundation to design on. After setting the information architecture, I will create multiple wireframes then build mockups to review with the stakeholders. Finally, I plan to do user testing to ensure the designs are meeting the needs of the user and iterate based on those findings.",

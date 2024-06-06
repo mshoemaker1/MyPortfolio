@@ -10,6 +10,8 @@ import RectangleFlag from "../../../public/richfield-july-4/rectangle-flag.svg";
 import wireframe from "../../../public/richfield-july-4/wireframe.png";
 import homePageHifi from "../../../public/richfield-july-4/homepage-hifi.png";
 import aboutHifi from "../../../public/richfield-july-4/about-hifi.png";
+import homePageLofi from "../../../public/richfield-july-4/homepage-lofi.png";
+import aboutLofi from "../../../public/richfield-july-4/about-lofi.png";
 import textBubble from "../../../public/richfield-july-4/ellipse.svg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
@@ -177,6 +179,18 @@ export default function RichfieldJuly4() {
             "Based on our tight timeframe, we created digital wireframes for the main pages before shifting to build mode.",
           ]}
         />
+        <div className="bg-lavender-500 py-24 flex flex-row justify-center">
+          <Image
+            src={homePageLofi}
+            alt="Home Page Lo-Fi"
+            className="max-w-[300px] mx-8"
+          />
+          <Image
+            src={aboutLofi}
+            alt="About Page Lo-Fi"
+            className="max-w-[300px] mx-8"
+          />
+        </div>
         <Section
           header="Seeking a Retro & Patriotic feel"
           content={[
