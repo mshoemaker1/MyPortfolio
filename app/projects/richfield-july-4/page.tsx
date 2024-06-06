@@ -6,6 +6,7 @@ import aquaLogo from "../../../public/richfield-july-4/aqua-logo.jpg";
 import delanoLogo from "../../../public/richfield-july-4/delano-logo.jpg";
 import edinaLogo from "../../../public/richfield-july-4/edina-logo.jpg";
 import glendaleLogo from "../../../public/richfield-july-4/glendale-logo.jpg";
+import RectangleFlag from "../../../public/richfield-july-4/rectangle-flag.svg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 
@@ -74,6 +75,61 @@ export default function RichfieldJuly4() {
             "This engagement effort built momentum towards the launch of the new website!",
           ]}
         />
+        <div className="flex flex-col items-center">
+          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-72 my-8">
+            <div className="w-full rounded-lg bg-lavender-500 flex flex-row items-center relative">
+              <div className="absolute top-0 right-0 h-full w-1/2">
+                <Image
+                  src={RectangleFlag}
+                  alt="White Background Box"
+                  className="h-full w-full hidden md:block"
+                />
+                <div className="bg-white rounded-lg md:hidden w-full h-full border-[3px] border-lavender-500"></div>
+              </div>
+              <div className="mx-[8%] text-black z-10 w-1/2">
+                <h5>LEARNING</h5>
+                <p>
+                  Survey participants are planning to drive or walk to the
+                  event.
+                </p>
+              </div>
+              <div className="mx-[8%] text-black z-10 w-1/2">
+                <h5>ACTION</h5>
+                <p>
+                  Add Transportation page to site map and ensure driving and
+                  walking directions are emphasized.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-64 my-8">
+            <div className="w-full rounded-lg bg-lavender-500 flex flex-row items-center relative">
+              <div className="absolute top-0 right-0 h-full w-1/2">
+                <Image
+                  src={RectangleFlag}
+                  alt="White Background Box"
+                  className="h-full w-full hidden md:block"
+                />
+                <div className="bg-white rounded-lg md:hidden w-full h-full border-[3px] border-lavender-500"></div>
+              </div>
+              <div className="mx-[8%] text-black z-10 w-1/2">
+                <h5>LEARNING</h5>
+                <p>
+                  Strong channel preference for Facebook; 75% of survey
+                  participants search for information on Facebook.
+                </p>
+              </div>
+              <div className="mx-[8%] text-black z-10 w-1/2">
+                <h5>ACTION</h5>
+                <p>
+                  Work closely with Social Media Coordinator to ensure
+                  information is staying coordinated between website and
+                  Facebook.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         <Section
           header="Understanding our users"
           content={[
