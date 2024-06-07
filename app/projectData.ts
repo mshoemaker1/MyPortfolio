@@ -37,7 +37,7 @@ export const data = [
     }
   },
   {
-    title: "Rebuilding Trust",
+    title: "Rebuilding trust",
     description: "Designing the Richfield 4th of July website",
     image: homeRichfield,
     bg: "bg-lavender-500",
@@ -60,8 +60,8 @@ export const data = [
             "Interview Richfield residents to understand their needs",
             "Create personas & user journeys",
             "Create site map, moodboard, and style guide as foundation for the new website",
-            "Design Lo-Fidelity wireframes and test with users",
-            "Design Hi-Fidelity mockups",
+            "Design low-fidelity wireframes and test with users",
+            "Design high-fidelity mockups",
             "Build Squarespace site",
           ],
           "Due to outside work and family commitments, we lost additional time at the beginning of the project making our timeline even tighter. We pared down our research plan and ultimately skipped testing our wireframes with users.  Though not ideal, we prioritized launching the site on time to meet the needs of the committee."

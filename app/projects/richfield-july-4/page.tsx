@@ -183,7 +183,7 @@ export default function RichfieldJuly4() {
           className="w-full max-w-[760px] self-center"
         />
         <Section
-          header="Lo-Fi Wireframes"
+          header="Lo-fi Wireframes"
           content={[
             "The team shared responsibilities for creating the digital wireframes in Figma. I designed the Homepage and the About page.",
             "Based on our tight timeframe, we created digital wireframes for the main pages before shifting to build mode.",
@@ -223,7 +223,7 @@ export default function RichfieldJuly4() {
           </div>
         </div>
         <Section
-          header="Seeking a Retro & Patriotic feel"
+          header="Seeking a retro & patriotic feel"
           content={[
             "The rebrand of the event allowed for the website to have a new look. My teammate organized a moodboard that we added content to early in the project.",
             "This served as a launching point for the visual look and feel of the website.",

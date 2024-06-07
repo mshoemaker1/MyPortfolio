@@ -139,10 +139,10 @@ export default function TrappedDowntown() {
             </div>
           ))}
         </div>
-        <h3 className="text-center px-10 font-[32px] mt-12 text-black">
+        <h3 className="text-center italic px-10 font-[32px] mt-12 text-black">
           “Websites are astonishingly unclear.
         </h3>
-        <h3 className="text-center px-10 font-[32px] text-black mt-0">
+        <h3 className="text-center italic px-10 font-[32px] text-black mt-0">
           How do I get to the place where I actually buy the ticket?”
         </h3>
       </div>
@@ -152,7 +152,7 @@ export default function TrappedDowntown() {
           title="Ideate"
           header="How do we organize the content in a way that puts users at ease and gives them confidence?"
           content={[
-            "In the current site map, there was a lack of hierarchy, which can unintentionally get in the way of a good user experience. So in order to better understand how users would group the information on the website, I conducted 5 card sort activities.",
+            "In the current site map, there is a lack of hierarchy, which can unintentionally get in the way of a good user experience.",
             "Users were given 13 concepts and asked to group them. They could add additional concepts, if they thought something was missing. Finally, the users were asked to label the groups.",
           ]}
         />
@@ -272,10 +272,10 @@ export default function TrappedDowntown() {
                 className="drop-shadow-md flex-1 mx-8 mb-8 lg:mb-0"
                 placeholder="blur"
               />
-              <h3 className="text-[26px] lg:text-[30px] text-black flex-1 mx-8 text-center lg:text-right">
+              <h3 className="text-[26px] italic lg:text-[30px] text-black flex-1 mx-8 text-center lg:text-right">
                 “Whoa. Now I understand. What are our users supposed to do?
                 Help!”
-                <h4 className="text-[16px] lg:text-[18px]">
+                <h4 className="text-[16px] not-italic lg:text-[18px]">
                   - Key Stakeholder
                 </h4>
               </h3>

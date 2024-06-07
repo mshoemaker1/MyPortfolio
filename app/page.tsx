@@ -3,7 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center mb-24">
       <div className="my-28">
         <p className="flex w-full justify-center text-center">
           Hi! I'm Meg!
