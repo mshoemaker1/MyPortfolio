@@ -246,14 +246,14 @@ export default function TrappedDowntown() {
           <Image
             src={oldSiteMap}
             alt="Old site map"
-            className="w-full max-w-[1220px] mt-8 mb-16 drop-shadow-md"
+            className="w-full max-w-[1220px] mt-8 mb-16"
             placeholder="blur"
           />
           <p>New Site Map</p>
           <Image
             src={newSiteMap}
             alt="New site map"
-            className="w-full max-w-[1078px] mt-8 mb-16 drop-shadow-md"
+            className="w-full max-w-[1078px] mt-8 mb-16"
             placeholder="blur"
           />
         </div>
