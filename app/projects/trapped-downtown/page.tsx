@@ -38,6 +38,7 @@ import wireframesEvents from "../../../public/trapped-downtown/wireframes-events
 import shapedRectangle from "../../../public/trapped-downtown/shaped-rectangle.png";
 import originalHome from "../../../public/trapped-downtown/original-home.png";
 import newHome from "../../../public/trapped-downtown/new-home.png";
+import PresentationLink from "./PresentationLink";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -262,7 +263,9 @@ export default function TrappedDowntown() {
           content={[
             "Before shifting to ideation, I met with the stakeholders to share the research and get their reactions to the new site map. They were generally supportive but there was a pivotal aha moment when I showed the competitors' mobile homescreen next to Trapped Downtown's mobile homescreen - they were able to step out of their understanding of their own website and really get in the user's shoes and see it with fresh eyes.",
           ]}
+          disableBottomPadding
         />
+        <PresentationLink />
         <div className="flex justify-center">
           <div className="bg-sand-500 md:rounded-lg px-10 py-20 lg:flex-row lg:w-9/12">
             <div className="flex flex-col lg:flex-row items-center">
@@ -458,6 +461,7 @@ export default function TrappedDowntown() {
               <a
                 target="_blank"
                 href="https://www.trappeddowntown.com/"
+                d
                 className="text-[#000EEE] font-bold hover:underline hover:underline-offset-4 hover:decoration-[3px]"
                 rel="noopener noreferrer"
               >
