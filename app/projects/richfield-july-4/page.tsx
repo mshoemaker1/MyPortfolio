@@ -16,6 +16,7 @@ import textBubble from "../../../public/richfield-july-4/ellipse.svg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
 import Link from "next/link";
+import SectionBullets from "@/components/Section/SectionBullets";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -44,8 +45,15 @@ export default function RichfieldJuly4() {
             "We selected a variety of direct and indirect competitors which included events that were well funded and had paid staff managing their website, multi-day events in large cities, and events that took place in nearby small towns in Minnesota.",
             "Through the analysis, we identified two features we wanted to use:",
           ]}
+          disableBottomPadding
         />
-        <div className="flex flex-row flex-wrap w-3/5 self-center justify-center sm:justify-between">
+        <SectionBullets
+          points={[
+            "Adding a Committee page to build connection",
+            "Integrating a “Donate” CTA button into the header to encourage support",
+          ]}
+        />
+        <div className="flex flex-row flex-wrap w-3/5 self-center justify-center sm:justify-between mt-8">
           <Image
             src={glendaleLogo}
             alt="Glendale 4th of July Logo"
@@ -246,6 +254,7 @@ export default function RichfieldJuly4() {
           content={[
             "The site went live just in time for the committee to contact local businesses for consideration of year-end gifts. The committee was very happy with the website and the new site and rebrand received a lot of positive buzz on Facebook!",
           ]}
+          bgColor="neutral"
           disableBottomPadding
         />
         <Link
@@ -283,6 +292,7 @@ export default function RichfieldJuly4() {
             "This was also the first time that I had done website building in Squarespace, so I learned about the process of moving from wireframes to building a website using a no code/low code product.",
             "My mentor did a great job of modeling good user experience practices and I was so thankful to her for letting me join the project!",
           ]}
+          bgColor="neutral"
         />
       </div>
     </main>
