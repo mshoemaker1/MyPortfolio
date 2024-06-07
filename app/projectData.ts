@@ -12,7 +12,7 @@ import { Point } from "@/components/Section/SectionBullets";
 export const data = [
   {
     title: "Unlocking more bookings",
-    description: "Refreshing the Trapped Downtown website",
+    description: "Updating the Trapped Downtown user experience",
     image: homeTrappedDowntown,
     bg: "bg-sand-500",
     path: "/projects/trapped-downtown",
