@@ -87,11 +87,6 @@ export const data = [
       content: {
         challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation, leading to a cluttered map and overwhelming list of recommendations for users.",
         goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
-        process: [
-          "My ideal process to address this challenge starts with a discovery phase where I learn as much as I can about the business itself, and start to dig in to the nuances of the industry. Then I plan to get to know users and their motivations.",
-          "Once I have grounded myself with that information, I will evaluate the structure of information on the website to ensure there is a good foundation to design on. After setting the information architecture, I will create multiple wireframes then build mockups to review with the stakeholders. Finally, I plan to do user testing to ensure the designs are meeting the needs of the user and iterate based on those findings.",
-          "In reality, I was able to follow my process fairly closely. I wasn't able to interview as many local users as I would have liked so I supplemented with users that met the criteria but were located across the country."
-        ]
       }
     }
   },

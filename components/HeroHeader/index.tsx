@@ -11,7 +11,9 @@ interface HeroHeaderProps {
     [key: string]: string[];
   };
   heroContent: {
-    [key: string]: HeroContentTextType;
+    challenge?: HeroContentTextType;
+    goal?: HeroContentTextType;
+    process?: HeroContentTextType;
   };
 }
 
