@@ -6,9 +6,9 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between">
       <div className="my-28">
         <p className="flex w-full justify-center text-center">
-          Hi! I'm Meg
+          Hi! I'm Meg!
           <br />
-          and I'm a designer
+          I'm a UX designer based in Minneapolis, MN
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
