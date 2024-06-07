@@ -183,7 +183,7 @@ export default function RichfieldJuly4() {
           className="w-full max-w-[760px] self-center"
         />
         <Section
-          header="Lo-fi Wireframes"
+          header="Lo-fi wireframes"
           content={[
             "The team shared responsibilities for creating the digital wireframes in Figma. I designed the Homepage and the About page.",
             "Based on our tight timeframe, we created digital wireframes for the main pages before shifting to build mode.",
