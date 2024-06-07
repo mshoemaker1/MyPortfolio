@@ -461,7 +461,6 @@ export default function TrappedDowntown() {
               <a
                 target="_blank"
                 href="https://www.trappeddowntown.com/"
-                d
                 className="text-[#000EEE] font-bold hover:underline hover:underline-offset-4 hover:decoration-[3px]"
                 rel="noopener noreferrer"
               >
