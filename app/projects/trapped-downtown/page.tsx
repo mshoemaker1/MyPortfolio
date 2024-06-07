@@ -21,8 +21,8 @@ import user4 from "../../../public/trapped-downtown/user-4.png";
 import user5 from "../../../public/trapped-downtown/user-5.png";
 import commonGroupings from "../../../public/trapped-downtown/common-groupings.png";
 import similarityMatrix from "../../../public/trapped-downtown/similarity-matrix.png";
-import oldSiteMap from "../../../public/trapped-downtown/site-map-old.jpg";
-import newSiteMap from "../../../public/trapped-downtown/site-map-new.jpg";
+import oldSiteMap from "../../../public/trapped-downtown/site-map-old.png";
+import newSiteMap from "../../../public/trapped-downtown/site-map-new.png";
 import aha from "../../../public/trapped-downtown/aha-moment.png";
 import finalDesign1 from "../../../public/trapped-downtown/final-design-1.png";
 import finalDesign2 from "../../../public/trapped-downtown/final-design-2.png";
@@ -241,25 +241,21 @@ export default function TrappedDowntown() {
           disableBottomPadding
         />
         <SectionBullets points={trappedDowntownSiteMapPoints} />
-        <div className="flex flex-row flex-wrap justify-center">
-          <div className="flex flex-col items-start m-6">
-            <p>Old Site Map</p>
-            <Image
-              src={oldSiteMap}
-              alt="Old site map"
-              className="w-[377px] drop-shadow-md rounded-lg"
-              placeholder="blur"
-            />
-          </div>
-          <div className="flex flex-col items-start m-6">
-            <p>New Site Map</p>
-            <Image
-              src={newSiteMap}
-              alt="New site map"
-              className="w-[377px] drop-shadow-md rounded-lg"
-              placeholder="blur"
-            />
-          </div>
+        <div className="flex flex-col justify-center items-center my-12">
+          <p>Old Site Map</p>
+          <Image
+            src={oldSiteMap}
+            alt="Old site map"
+            className="w-full max-w-[1220px] mt-8 mb-16 drop-shadow-md"
+            placeholder="blur"
+          />
+          <p>New Site Map</p>
+          <Image
+            src={newSiteMap}
+            alt="New site map"
+            className="w-full max-w-[1078px] mt-8 mb-16 drop-shadow-md"
+            placeholder="blur"
+          />
         </div>
         <Section
           header="Bringing the Stakeholders along on the journey"
