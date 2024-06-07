@@ -15,6 +15,7 @@ import aboutLofi from "../../../public/richfield-july-4/about-lofi.png";
 import textBubble from "../../../public/richfield-july-4/ellipse.svg";
 import { richfieldResearchSquares } from "../../projectData";
 import { Divider } from "@/components/Divider";
+import Link from "next/link";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -241,12 +242,19 @@ export default function RichfieldJuly4() {
         <Divider borderColor="border-white" />
         <Section
           title="impact"
-          header="New site went live November 27, 2023 - Visit Now!"
+          header="New site went live November 27, 2023"
           content={[
             "The site went live just in time for the committee to contact local businesses for consideration of year-end gifts. The committee was very happy with the website and the new site and rebrand received a lot of positive buzz on Facebook!",
           ]}
+          disableBottomPadding
         />
-        <div className="text-black relative max-w-[459px] h-[130px] ml-[5%] sm:ml-[15%] md:ml-[20%]">
+        <Link
+          href="https://www.richfield4th.com/"
+          className="px-10 md:px-72 lg:px-96 underline text-[#0000EE] hover:text-[#0000EE] underline-offset-4 visited:text-[#551A8B]"
+        >
+          Visit Now!
+        </Link>
+        <div className="text-black relative mt-12 max-w-[459px] h-[130px] ml-[5%] sm:ml-[15%] md:ml-[20%]">
           <Image src={textBubble} alt="Text Bubble" className="absolute" />
           <div className="absolute inset-0 flex flex-col justify-center items-center">
             <h4>“Wow this looks so good!”</h4>
