@@ -179,17 +179,38 @@ export default function RichfieldJuly4() {
             "Based on our tight timeframe, we created digital wireframes for the main pages before shifting to build mode.",
           ]}
         />
-        <div className="bg-lavender-500 py-24 flex flex-row justify-center">
-          <Image
-            src={homePageLofi}
-            alt="Home Page Lo-Fi"
-            className="max-w-[300px] mx-8"
-          />
-          <Image
-            src={aboutLofi}
-            alt="About Page Lo-Fi"
-            className="max-w-[300px] mx-8"
-          />
+        <div className="bg-lavender-500 py-24 flex flex-row flex-wrap justify-center">
+          <div className="relative">
+            <Image
+              src={homePageLofi}
+              alt="Home Page Lo-Fi"
+              className="w-[200px] md:w-[375px] mx-8 ml-48 my-8"
+            />
+            <div className="w-[180px] md:w-[253px] bg-sand-500 rounded-lg p-4 absolute top-12 right-[216px] md:right-96">
+              <p className="text-black text-xs md:text-lg">
+                Include images from previous years to build awareness of the
+                long history of the event.
+              </p>
+            </div>
+            <div className="w-[180px] md:w-[253px] bg-sand-500 rounded-lg p-4 absolute bottom-4 right-[216px] md:right-96">
+              <p className="text-black text-xs md:text-lg">
+                Photo & letter from the President to humanize the committee and
+                rebuild trust.
+              </p>
+            </div>
+          </div>
+          <div className="relative">
+            <Image
+              src={aboutLofi}
+              alt="About Page Lo-Fi"
+              className="w-[200px] md:w-[375px] mx-8 mr-48 my-8"
+            />
+            <div className="w-[180px] md:w-[253px] bg-sand-500 rounded-lg p-4 absolute top-12 left-[216px] md:left-96">
+              <p className="text-black text-xs md:text-lg">
+                Keep “Donate” CTA button visible throughout the website.
+              </p>
+            </div>
+          </div>
         </div>
         <Section
           header="Seeking a Retro & Patriotic feel"
@@ -234,7 +255,11 @@ export default function RichfieldJuly4() {
         </div>
         <div className="w-full flex flex-row-reverse mt-2">
           <div className="text-black relative w-[459px] h-[130px] mr-[5%] sm:mr-[15%] md:mr-[20%]">
-            <Image src={textBubble} alt="Text Bubble" className="absolute" />
+            <Image
+              src={textBubble}
+              alt="Text Bubble"
+              className="absolute transform scale-x-[-1]"
+            />
             <div className="absolute inset-0 flex flex-col justify-center items-center">
               <h4>“Thanks for all your work on this!!!”</h4>
               <p>-Laurie H, Richfield resident</p>
