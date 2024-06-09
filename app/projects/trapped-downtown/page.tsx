@@ -13,7 +13,7 @@ import competition1 from "../../../public/trapped-downtown/group-6.png";
 import competition2 from "../../../public/trapped-downtown/group-7.png";
 import competition3 from "../../../public/trapped-downtown/group-8.png";
 import competition4 from "../../../public/trapped-downtown/group-9.png";
-import empathyMap from "../../../public/trapped-downtown/empathy-map.jpg";
+import empathyMap from "../../../public/trapped-downtown/empathy-map.png";
 import user1 from "../../../public/trapped-downtown/user-1.png";
 import user2 from "../../../public/trapped-downtown/user-2.png";
 import user3 from "../../../public/trapped-downtown/user-3.png";
@@ -125,7 +125,7 @@ export default function TrappedDowntown() {
         <Image
           src={empathyMap}
           alt="Post it note empathy map"
-          className="drop-shadow-md"
+          className="drop-shadow-md w-full max-w-[924px]"
           placeholder="blur"
         />
         <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex">
@@ -254,7 +254,7 @@ export default function TrappedDowntown() {
           <Image
             src={newSiteMap}
             alt="New site map"
-            className="w-full max-w-[1078px] mt-8 mb-16"
+            className="w-full max-w-[1078px] mt-8"
             placeholder="blur"
           />
         </div>
@@ -434,7 +434,7 @@ export default function TrappedDowntown() {
             className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
           />
         </div>
-        <Divider borderColor="border-white" />
+        <Divider borderColor="border-white" marginBottom={false} />
         <Section
           title="Results"
           header="Updated site went live May 3"
@@ -477,7 +477,7 @@ export default function TrappedDowntown() {
             </div>
           </div>
         </div>
-        <Divider borderColor="border-white" />
+        <Divider borderColor="border-white" marginBottom={false} />
         <Section
           title="Reflect"
           header="Learnings"
