@@ -90,9 +90,10 @@ export default function RichfieldJuly4() {
             "We utilized the robust Richfield Community Facebook page to ask three survey questions of the community. With input from the Committee’s Social Media Coordinator, we decided to ask one question per week in an effort to create meaningful points of engagement with community members throughout the month of November.",
             "This engagement effort built momentum towards the launch of the new website!",
           ]}
+          disableBottomPadding
         />
         <div className="flex flex-col items-center">
-          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-72 my-8">
+          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-72 mt-8">
             <div className="w-full rounded-lg bg-lavender-500 flex flex-row items-center relative">
               <div className="absolute top-0 right-0 h-full w-1/2">
                 <Image
@@ -260,7 +261,7 @@ export default function RichfieldJuly4() {
             />
           </div>
         </div>
-        <Divider borderColor="border-white" />
+        <Divider borderColor="border-white" marginBottom={false} />
         <Section
           title="impact"
           header="New site went live November 27, 2023"
@@ -296,7 +297,7 @@ export default function RichfieldJuly4() {
             </div>
           </div>
         </div>
-        <Divider borderColor="border-white" />
+        <Divider borderColor="border-white" marginBottom={false} />
         <Section
           title="Reflect"
           header="Learnings"
