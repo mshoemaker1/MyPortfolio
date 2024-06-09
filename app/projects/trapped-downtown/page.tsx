@@ -272,10 +272,10 @@ export default function TrappedDowntown() {
               <Image
                 src={aha}
                 alt="5 mobile devices screens showing competitors' and Trapped Downtown's home screens"
-                className="drop-shadow-md flex-1 mx-8 mb-8 lg:mb-0"
+                className="drop-shadow-md flex-1 md:w-1/2 mx-12 mb-8 lg:mb-0"
                 placeholder="blur"
               />
-              <h3 className="text-[26px] italic lg:text-[30px] text-black flex-1 mx-8 text-center lg:text-right">
+              <h3 className="text-[26px] italic lg:text-[30px] text-black flex-1 md:w-1/2 mx-12 text-center lg:text-right">
                 “Whoa. Now I understand. What are our users supposed to do?
                 Help!”
                 <h4 className="text-[16px] not-italic lg:text-[18px]">
