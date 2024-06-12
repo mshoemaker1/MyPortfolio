@@ -125,8 +125,8 @@ export const trappedDowntownCurrentExperiencePoints: Point[] = [
 
 export const trappedDowntownSiteMapPoints: Point[] = [
   {"Add Homepage": "Adding a homepage gives users high priority information quickly (ex. price, hours of operation) and a Book Now CTA. Homepage also serves as a central hub for directing users to more information."},
-  {"Redesign CTA button": "Book Now CTA redesigned as a stand-alone button vs blending in with the other menu items."},
-  {"Streamline Content": "Organized content into 3 groups which enables a ‘right information at the right time' flow to the website."},
+  {"Redesign CTA button": "Book Now CTA redesigned as a stand-alone button vs. blending in with the other menu items."},
+  {"Streamline Content": "Organized content into 3 groups which enables a 'right information at the right time' flow to the website."},
   {"Update Footer": "Added relevant information and quick links to site footer to help users navigate the website."},
 ]
 

@@ -116,7 +116,7 @@ export default function TrappedDowntown() {
         <Section
           header="What do people think, feel, and do when booking events in advance?"
           content={[
-            "I interviewed 8 users about their experience researching, selecting, and booking events in advance (e.g. axe throwing, cooking classes). I also asked specific question about their experience with escape rooms, as this was of interest to our stakeholders.",
+            "I interviewed 8 users about their experience researching, selecting, and booking events in advance (e.g., axe throwing, cooking classes). I also asked specific questions about their experiences with escape rooms, as this was of interest to our stakeholders.",
             "Following the interviews, I reviewed the notes and created an Empathy Map to better understand the perspective of our users.",
           ]}
         />
@@ -488,8 +488,8 @@ export default function TrappedDowntown() {
         <SectionBullets
           points={[
             "I wish I would have added 1-2 analogous competitors to my Competitive Analysis. I think we could have learned how different types of entertainment offerings serve their users instead of just looking at other escape room businesses.",
-            "Upon reflection, I think the final product could have been stronger if I had conducted a different type of user testing. I would do  a moderated user testing session with a small number of users. This could have confirmed (or complicated) the information architecture, which had undergone a lot of change.",
-            "To further strengthen the utility of the my designs, I want to take a class on SEO optimization.",
+            "Upon reflection, I think the final product could have been stronger if I had conducted a different type of user testing. I would do a moderated user testing session with a small number of users. This could have confirmed (or complicated) the information architecture, which had undergone significant change.",
+            "To further strengthen the utility of my designs, I want to take a class on SEO optimization.",
           ]}
           bgColor="neutral"
         />
