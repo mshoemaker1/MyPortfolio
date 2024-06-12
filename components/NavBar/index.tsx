@@ -7,7 +7,15 @@ import MenuItem from "./MenuItem";
 import HamburgerIcon from "./HamburgerIcon";
 
 const menuItems = [
-  { href: "/", label: "HOME" },
+  {
+    href: "/",
+    label: "PROJECTS",
+    subItems: [
+      { href: "/projects/trapped-downtown", label: "Trapped Downtown" },
+      { href: "/projects/richfield-july-4", label: "Richfield 4th of July" },
+      // { href: "/projects/little-cup", label: "Little Cup" },
+    ],
+  },
   { href: "/about", label: "ABOUT" },
   // { href: "/contact", label: "CONTACT" },
 ];
@@ -34,7 +42,20 @@ const Navbar = () => {
           </div>
           <div className="hidden md:flex items-center space-x-4">
             {menuItems.map((item) => (
-              <MenuItem key={item.href} href={item.href} label={item.label} />
+              <div key={item.href} className="relative group">
+                <MenuItem href={item.href} label={item.label} />
+                {item.subItems && (
+                  <div className="absolute left-0 w-64 p-4 bg-white dark:bg-gray-800 dark:text-white shadow-md dark:shadow-lg hidden group-hover:block">
+                    {item.subItems.map((subItem) => (
+                      <MenuItem
+                        key={subItem.href}
+                        href={subItem.href}
+                        label={subItem.label}
+                      />
+                    ))}
+                  </div>
+                )}
+              </div>
             ))}
           </div>
 
@@ -56,12 +77,25 @@ const Navbar = () => {
           } md:hidden mt-2 space-y-2 z-10`}
         >
           {menuItems.map((item) => (
-            <MenuItem
-              key={item.href}
-              href={item.href}
-              label={item.label}
-              onClick={closeNavbar}
-            />
+            <div key={item.href}>
+              <MenuItem
+                href={item.href}
+                label={item.label}
+                onClick={closeNavbar}
+              />
+              {item.subItems && (
+                <div className="ml-4">
+                  {item.subItems.map((subItem) => (
+                    <MenuItem
+                      key={subItem.href}
+                      href={subItem.href}
+                      label={subItem.label}
+                      onClick={closeNavbar}
+                    />
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>
