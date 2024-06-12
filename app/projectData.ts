@@ -69,27 +69,27 @@ export const data = [
       }
     }
   },
-  // {
-  //   title: "Finding the perfect coffee shop",
-  //   description: "Designing Little Cup, a responsive website",
-  //   image: homeLittleCup,
-  //   bg: "bg-bronze-500",
-  //   path: "/projects/little-cup",
-  //   tags: ["Case study", "social", "consumer services"],
-  //   hero: {
-  //     image: heroLittleCup,
-  //     alt: "Computer on a desk",
-  //     bulletPoints: {
-  //       role: ["UX Designer"],
-  //       tools: ["Figma"],
-  //       when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
-  //     },
-  //     content: {
-  //       challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation, leading to a cluttered map and overwhelming list of recommendations for users.",
-  //       goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
-  //     }
-  //   }
-  // },
+  {
+    title: "Finding the perfect coffee shop",
+    description: "Designing Little Cup, a responsive website",
+    image: homeLittleCup,
+    bg: "bg-bronze-500",
+    path: "/projects/little-cup",
+    tags: ["Case study", "social", "consumer services"],
+    hero: {
+      image: heroLittleCup,
+      alt: "Computer on a desk",
+      bulletPoints: {
+        role: ["UX Designer"],
+        tools: ["Figma"],
+        when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
+      },
+      content: {
+        challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation, leading to a cluttered map and overwhelming list of recommendations for users.",
+        goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
+      }
+    }
+  },
 ];
 
 export const richfieldResearchSquares = [

@@ -5,7 +5,7 @@ interface SectionProps {
   header?: string;
   content?: string[];
   disableBottomPadding?: boolean;
-  bgColor?: "sand" | "neutral";
+  bgColor?: "sand" | "neutral" | "bronze";
 }
 
 const Section = ({
@@ -19,6 +19,8 @@ const Section = ({
     switch (bgColor) {
       case "sand":
         return "bg-sand-500 text-black";
+      case "bronze":
+        return "bg-bronze-500 text-black";
       case "neutral":
         return "bg-neutral-550 text-white";
       default:

@@ -13,7 +13,7 @@ const menuItems = [
     subItems: [
       { href: "/projects/trapped-downtown", label: "Trapped Downtown" },
       { href: "/projects/richfield-july-4", label: "Richfield 4th of July" },
-      // { href: "/projects/little-cup", label: "Little Cup" },
+      { href: "/projects/little-cup", label: "Little Cup" },
     ],
   },
   { href: "/about", label: "ABOUT" },
