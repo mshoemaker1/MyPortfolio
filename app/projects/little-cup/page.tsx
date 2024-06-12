@@ -5,11 +5,13 @@ import { Divider } from "@/components/Divider";
 import { ResearchPins } from "./ResearchPins";
 import { FilterLibrary } from "./FilterLibrary";
 import Image from "next/image";
+import SectionBullets from "@/components/Section/SectionBullets";
 import siteMap from "../../../public/little-cup/site-map.png";
 import devicesHome from "../../../public/little-cup/devices-home.png";
 import userTests001 from "../../../public/little-cup/user-tests-001.png";
 import userTests002 from "../../../public/little-cup/user-tests-002.png";
-import SectionBullets from "@/components/Section/SectionBullets";
+import hifiDesktop from "../../../public/little-cup/hifi-desktop.png";
+import hifiMobile from "../../../public/little-cup/hifi-mobile.png";
 
 const projectData = data.find(
   (project) => project.path === "/projects/little-cup"
@@ -122,31 +124,21 @@ export default function LittleCup() {
       </div>
       <div className="bg-neutral-550 py-20">
         <Section title="Final design" bgColor="neutral" disableBottomPadding />
-        <div className="flex flex-row flex-wrap justify-center">
-          {/* <Image
-            src={finalDesign1}
-            alt="Final design 1"
-            placeholder="blur"
-            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
-          />
+        <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
+          <div className="relative w-[145px]">
+            <Image
+              src={hifiMobile}
+              alt="Hi-fi mobile design"
+              placeholder="blur"
+              className="lg:absolute lg:top-[68px] lg:left-[32px]"
+            />
+          </div>
           <Image
-            src={finalDesign2}
-            alt="Final design 2"
+            src={hifiDesktop}
+            alt="Hi-fi desktop design"
             placeholder="blur"
-            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
+            className="w-[700px]"
           />
-          <Image
-            src={finalDesign3}
-            alt="Final design 3"
-            placeholder="blur"
-            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
-          />
-          <Image
-            src={finalDesign4}
-            alt="Final design 4"
-            placeholder="blur"
-            className="mx-2 w-[142px] h-[292px] md:w-[284px] md:h-[584px]"
-          /> */}
         </div>
         <Divider borderColor="border-white" marginBottom={false} />
         <Section
@@ -158,17 +150,17 @@ export default function LittleCup() {
         />
         <SectionBullets
           points={[
-            "Language for filters is important. As an examples, I went through a few iterations before landing on “Serves Hot Food”.",
-            "Keeping Call to Actions in context! “Write a Review” doesn’t make sense without the context of a specific shop or product to write the review about.",
+            "Language for filters is important. As an examples, I went through a few iterations before landing on “Serves Hot Food.",
+            "Call to action buttons need to be  in context. “Write a Review” doesn’t make sense without the context of a specific shop or product to write the review about.",
           ]}
           bgColor="neutral"
         />
         <Section header="Next Steps" bgColor="neutral" disableBottomPadding />
         <SectionBullets
           points={[
-            "Evaluating the benefits of offering log-in creation/storage.",
-            "Testing blog-like content to see if users engage with it. This is Inspired by The Infatuation website.",
-            "Add crowd-source additional filters based on search history.",
+            "Evaluating the benefits of offering log-in creation and storage.",
+            "Testing blog-like content to see if users engage with it. This is inspired by The Infatuation website.",
+            "Adding additional filters based on popular searches.",
           ]}
           bgColor="neutral"
         />
