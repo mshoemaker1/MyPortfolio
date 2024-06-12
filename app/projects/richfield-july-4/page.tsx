@@ -140,7 +140,7 @@ export default function RichfieldJuly4() {
                 <h5>ACTION</h5>
                 <p>
                   Work closely with Social Media Coordinator to ensure
-                  information is coordinated between website and Facebook.
+                  information is coordinated between the website and Facebook.
                 </p>
               </div>
             </div>
