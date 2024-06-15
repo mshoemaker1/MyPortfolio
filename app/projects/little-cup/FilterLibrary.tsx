@@ -1,6 +1,6 @@
 const data = {
   Food: ["Fresh baked goods", "Serves hot food"],
-  Ownership: ["Independent", "Women/BIPOC/LGBTQ+"],
+  Ownership: ["Independent", "Women/BIPOC/ LGBTQ+"],
   Specialities: ["Cold brew", "Matcha", "Roaster on-site"],
   Transportation: ["Bike rack", "Drive-through", "Parking"],
   Vibe: ["Allows pets", "Wifi"],

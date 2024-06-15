@@ -85,7 +85,7 @@ export const data = [
         when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
       },
       content: {
-        challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation, leading to a cluttered map and overwhelming list of recommendations for users.",
+        challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation. This leads to a cluttered map and an overwhelming list of recommendations for users.",
         goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
       }
     }

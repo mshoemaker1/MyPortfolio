@@ -52,7 +52,7 @@ export default function LittleCup() {
         <Section
           header="Filter library built from user feedback"
           content={[
-            "I conducted three semi-structured interviews. Based on the interviews, I built the Filter library.",
+            "I conducted three semi-structured interviews. Based on the interviews, I built the filter library.",
           ]}
         />
         <FilterLibrary />
@@ -74,8 +74,12 @@ export default function LittleCup() {
           </div>
         </div>
       </div>
-      <Section header="Designing for multiple screen sizes" />
-      <div className="flex items-center justify-center bg-[url('/little-cup/lofi-background.jpg')] bg-center bg-cover">
+      <Section
+        header="Designing for multiple screen sizes"
+        disableBottomPadding
+      />
+      <SectionBullets points={["Desktop", "Tablet", "Mobile"]} />
+      <div className="flex items-center justify-center bg-[url('/little-cup/lofi-background.jpg')] bg-center bg-cover md:mt-8">
         <div className="flex items-center justify-center bg-bronze-300 px-[75px] py-[40px] my-24 md:rounded-lg">
           <Image
             src={devicesHome}
@@ -87,7 +91,7 @@ export default function LittleCup() {
       <Divider />
       <Section
         title="Test"
-        header="Round 1: User Testing identifies opportunities for improving the navigation  & log-in processes"
+        header="Round 1: User testing identifies opportunities for improving the navigation  & log-in processes"
         bgColor="bronze"
       />
       <div className="flex flex-col lg:flex-row bg-bronze-500 justify-center items-center pb-36">
@@ -97,8 +101,9 @@ export default function LittleCup() {
         <div className="flex lg:w-[295px] px-16 mt-12">
           <ul className="list-disc">
             <li className="text-black">
-              Navigation Bar has Call To Actions that are out of context. Move
-              Call to Actions to be in context with content.
+              The navigation bar has call to action items that are out of
+              context. Move the items out of the navigation bar so they are in
+              context with related content.
             </li>
           </ul>
         </div>
@@ -151,7 +156,7 @@ export default function LittleCup() {
         <SectionBullets
           points={[
             "Language for filters is important. As an examples, I went through a few iterations before landing on “Serves Hot Food.",
-            "Call to action buttons need to be  in context. “Write a Review” doesn’t make sense without the context of a specific shop or product to write the review about.",
+            "Call to action items need to be in context. “Write a Review” doesn't make sense without the context of a specific shop or product to write the review about.",
           ]}
           bgColor="neutral"
         />
