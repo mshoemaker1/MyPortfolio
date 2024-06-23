@@ -155,8 +155,8 @@ export default function LittleCup() {
         />
         <SectionBullets
           points={[
-            "Language for filters is important. As an examples, I went through a few iterations before landing on “Serves Hot Food.",
-            "Call to action items need to be in context. “Write a Review” doesn't make sense without the context of a specific shop or product to write the review about.",
+            `Language for filters is important. As an examples, I went through a few iterations before landing on "Serves Hot Food."`,
+            `Call to action items need to be in context. "Write a Review" doesn't make sense without the context of a specific shop or product to write the review about.`,
           ]}
           bgColor="neutral"
         />
