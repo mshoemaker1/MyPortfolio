@@ -122,20 +122,38 @@ export default function TrappedDowntown() {
         />
       </div>
       <div className="bg-sand-500 flex flex-col items-center py-20 relative">
+        <div className="grid grid-cols-2 grid-rows-1 gap-4 my-4 lg:flex z-10">
+          {trappedDowntownCircles.slice(0, 2).map((circle, index) => (
+            <div
+              key={index}
+              className={`flex flex-col justify-center lg:absolute w-[170px] h-[170px] bg-white rounded-full ${circle.x} ${circle.y}`}
+            >
+              <p className="relative text-black text-[18px] text-center px-3">
+                {circle.text}
+                <p className="italic absolute -top-5 left-11 text-black text-sm text-center px-3">
+                  Insight #{index + 1}
+                </p>
+              </p>
+            </div>
+          ))}
+        </div>
         <Image
           src={empathyMap}
           alt="Post it note empathy map"
           className="drop-shadow-md w-full max-w-[924px]"
           placeholder="blur"
         />
-        <div className="grid grid-cols-2 grid-rows-2 gap-4 mt-12 lg:flex">
-          {trappedDowntownCircles.map((circle, index) => (
+        <div className="grid grid-cols-2 grid-rows-1 gap-4 my-4 lg:flex">
+          {trappedDowntownCircles.slice(2, 4).map((circle, index) => (
             <div
               key={index}
-              className={`flex lg:absolute w-[170px] h-[170px] bg-white rounded-full items-center justify-center ${circle.x} ${circle.y}`}
+              className={`flex flex-col justify-center lg:absolute w-[170px] h-[170px] bg-white rounded-full ${circle.x} ${circle.y}`}
             >
-              <p className="text-black text-[18px] text-center px-3">
+              <p className="relative text-black text-[18px] text-center px-3">
                 {circle.text}
+                <p className="italic absolute -top-5 left-11 text-black text-sm text-center px-3">
+                  Insight #{index + 3}
+                </p>
               </p>
             </div>
           ))}
