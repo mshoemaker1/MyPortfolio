@@ -21,10 +21,22 @@ export default function About() {
             <p className="text-3xl text-left mt-2 my-6">I'm a UX Designer.</p>
             <p className="text-3xl text-left mt-2 my-6">
               My greatest strength is my empathy and I have a talent for
-              fostering collaboration and focusing on the details.
+              fostering collaboration. My work style has been described as
+              “collaborative decision making.” I am regularly sharing my
+              work/opinions/plans and asking for feedback. This is reflected in
+              my design process - I always need to get grounded in the content
+              through stakeholder interviews and competitive analysis before
+              jumping into designing.{" "}
+              <span className="italic">
+                What got you to this decision point? What has been tried before?
+                What does 'good' look like in this space?
+              </span>
             </p>
             <p className="text-3xl text-left mt-2 my-6">
-              I value harmony and bringing curiosity to every conversation.
+              I'm also a mom of two little kids.
+              <br />
+              And when I get the chance, I love catching up on the newest
+              restaurants and experiences in the Twin Cities!
             </p>
           </div>
           <div>
