@@ -12,12 +12,12 @@ export const FilterLibrary = () => {
       {Object.keys(data).map((key) => (
         <div
           key={key}
-          className="flex flex-col w-[255px] h-[210px] mx-4 my-4 rounded-lg border-bronze-500 border-[2px]"
+          className="flex flex-col w-[255px] h-[210px] mx-4 my-4 rounded-2xl drop-shadow-md"
         >
-          <div className="flex flex-col w-full h-[70px] justify-center items-center bg-bronze-300 rounded-t-md">
+          <div className="flex flex-col w-full h-[70px] justify-center items-center bg-bronze-300 rounded-t-2xl">
             <p className="text-black">{key}</p>
           </div>
-          <div className="flex flex-col bg-bronze-500 h-full px-[40px] pt-[30px] rounded-b-sm">
+          <div className="flex flex-col bg-bronze-500 h-full px-[40px] pt-[30px] rounded-b-2xl">
             <ul className="list-disc px-6">
               {data[key as keyof typeof data].map((item: string) => (
                 <li key={item} className="text-black">
