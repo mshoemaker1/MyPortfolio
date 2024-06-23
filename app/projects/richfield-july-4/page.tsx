@@ -229,16 +229,14 @@ export default function RichfieldJuly4() {
             "This served as a launching point for the visual look and feel of the website.",
           ]}
         />
-        <div className="flex flex-row mx-12 lg:mx-48 justify-around mb-24">
-          <div className="mx-2 my-10">
-            <div className="rounded-lg overflow-y-scroll w-full md:w-[700px] h-[500px] mt-1">
-              <Image
-                src={moodBoard}
-                alt="Long image"
-                placeholder="blur"
-                className="w-full"
-              />
-            </div>
+        <div className="flex flex-row md:mx-12 lg:mx-48 justify-around mb-24">
+          <div className="md:rounded-lg overflow-y-scroll w-full md:w-[700px] h-[500px] mt-1">
+            <Image
+              src={moodBoard}
+              alt="Long image"
+              placeholder="blur"
+              className="w-full"
+            />
           </div>
         </div>
       </div>
