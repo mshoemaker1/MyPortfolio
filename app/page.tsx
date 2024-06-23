@@ -11,7 +11,7 @@ export default function Home() {
           I'm a UX designer based in Minneapolis, MN
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-4">
         {data.map((project, index) => (
           <ProjectCard
             key={index}
