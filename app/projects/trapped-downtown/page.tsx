@@ -238,7 +238,7 @@ export default function TrappedDowntown() {
             <Image
               src={commonGroupings}
               alt="Common groupings"
-              className="w-[850px]"
+              className="w-[850px] drop-shadow-md"
               placeholder="blur"
             />
           </div>
@@ -247,7 +247,7 @@ export default function TrappedDowntown() {
             <Image
               src={similarityMatrix}
               alt="Similarity matrix"
-              className="w-[850px]"
+              className="w-[850px] drop-shadow-md"
               placeholder="blur"
             />
           </div>
