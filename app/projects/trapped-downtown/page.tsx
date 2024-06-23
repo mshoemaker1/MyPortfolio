@@ -291,10 +291,12 @@ export default function TrappedDowntown() {
             "With the blessing of our stakeholders, I collected all of the insights from research and the new site map and started sketching. I sketched multiple versions of each screen and refined until I was happy with the look and feel of each screen.",
           ]}
         />
-        <div className="flex flex-row mb-12 md:mb-16 lg:mb-[74px] mx-12 lg:mx-48 justify-around">
+        <div className="flex flex-row mb-12 md:mb-16 lg:mb-[74px] mx-6 lg:mx-48 justify-around">
           <div className="mx-2">
-            <p className="text-center">HOME SCREEN</p>
-            <div className="relative p-4">
+            <p className="h-12 flex items-center justify-center text-center">
+              HOME SCREEN
+            </p>
+            <div className="relative p-2 sm:p-4">
               <Image
                 className="absolute top-0 left-0 -z-10"
                 src={shapedRectangle}
@@ -309,8 +311,10 @@ export default function TrappedDowntown() {
             </div>
           </div>
           <div className="mx-2">
-            <p className="text-center">CONTACT US SCREEN</p>
-            <div className="relative p-4">
+            <p className="h-12 flex items-center justify-center text-center">
+              CONTACT US SCREEN
+            </p>
+            <div className="relative p-2 sm:p-4">
               <Image
                 className="absolute top-0 left-0 -z-10"
                 src={shapedRectangle}
@@ -325,8 +329,10 @@ export default function TrappedDowntown() {
             </div>
           </div>
           <div className="mx-2">
-            <p className="text-center">EVENTS & GIFTS SCREEN</p>
-            <div className="relative p-4">
+            <p className="h-12 flex items-center justify-center text-center">
+              EVENTS & GIFTS SCREEN
+            </p>
+            <div className="relative p-2 sm:p-4">
               <Image
                 className="absolute top-0 left-0 -z-10"
                 src={shapedRectangle}
