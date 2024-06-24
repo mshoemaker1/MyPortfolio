@@ -119,7 +119,7 @@ export default function RichfieldJuly4() {
               </div>
             </div>
           </div>
-          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-64 my-8">
+          <div className="flex max-w-[1030px] w-full sm:h-[187px] h-72 my-8">
             <div className="w-full rounded-lg bg-lavender-500 flex flex-row items-center relative">
               <div className="absolute top-0 right-0 h-full w-1/2">
                 <Image
