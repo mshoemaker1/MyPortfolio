@@ -6,7 +6,7 @@ export type Point = {
 
 interface SectionBulletsProps {
   points: Point[] | string[];
-  bgColor?: "neutral";
+  bgColor?: "neutral" | "bronze";
 }
 
 const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
@@ -14,6 +14,8 @@ const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
     switch (bgColor) {
       case "neutral":
         return "bg-neutral-550 text-white";
+      case "bronze":
+        return "bg-bronze-500 text-black";
       default:
         return "";
     }
@@ -21,7 +23,6 @@ const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
 
   return (
     <div
-      // lg:mx-56
       className={`flex flex-col px-10 pb-20 md:flex-row md:pl-72 md:pr-32 md:pb-3 lg:px-96
       ${bg()}`}
     >

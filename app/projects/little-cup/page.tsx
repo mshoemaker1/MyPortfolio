@@ -10,6 +10,8 @@ import siteMap from "../../../public/little-cup/site-map.png";
 import devicesHome from "../../../public/little-cup/devices-home.png";
 import userTests001 from "../../../public/little-cup/user-tests-001.png";
 import userTests002 from "../../../public/little-cup/user-tests-002.png";
+import userTests003 from "../../../public/little-cup/user-tests-003.png";
+import userTests004 from "../../../public/little-cup/user-tests-004.png";
 import hifiDesktop from "../../../public/little-cup/hifi-desktop.png";
 import hifiMobile from "../../../public/little-cup/hifi-mobile.png";
 
@@ -94,7 +96,7 @@ export default function LittleCup() {
         header="Round 1: User testing identifies opportunities for improving the navigation  & log-in processes"
         bgColor="bronze"
       />
-      <div className="flex flex-col lg:flex-row bg-bronze-500 justify-center items-center pb-36">
+      <div className="flex flex-col lg:flex-row bg-bronze-500 justify-center items-center pb-24">
         <div className="w-full max-w-[786px]">
           <Image src={userTests001} alt="Hi-fi testing versions" />
         </div>
@@ -108,7 +110,7 @@ export default function LittleCup() {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row bg-bronze-500 justify-center items-center pb-36">
+      <div className="flex flex-col lg:flex-row bg-bronze-500 justify-center items-center pb-24">
         <div className="flex flex-col w-full max-w-[724px] lg:mr-[62px]">
           <div className="flex flex-row text-black">
             <p className="mr-[calc(54%-78px)] md:mr-[calc(54%-76px)]">
@@ -127,6 +129,38 @@ export default function LittleCup() {
           </ul>
         </div>
       </div>
+      <div className="bg-bronze-500 pb-24">
+        <Section
+          header="Round 2: User testing identifies need for tagline and adjustments to filter display"
+          bgColor="bronze"
+          disableBottomPadding
+        />
+        <SectionBullets
+          points={[
+            "Add a tagline to the home page to better communicate the purpose of the site.",
+            "Adjust the filter display to better communicate the purpose of the filters.",
+          ]}
+          bgColor="bronze"
+        />
+        <div className="flex flex-col lg:flex-row justify-center items-center">
+          <div className="flex flex-col w-full max-w-[600px] m-8">
+            <p className="text-black">Tested Version</p>
+            <Image
+              src={userTests003}
+              alt="Little Cup test website"
+              className="drop-shadow-md"
+            />
+          </div>
+          <div className="flex flex-col w-full max-w-[600px] m-8">
+            <p className="text-black">Iterated Version</p>
+            <Image
+              src={userTests004}
+              alt="Little Cup test website with updates"
+              className="drop-shadow-md"
+            />
+          </div>
+        </div>
+      </div>
       <div className="bg-neutral-550 py-20">
         <Section title="Final design" bgColor="neutral" disableBottomPadding />
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
@@ -135,14 +169,14 @@ export default function LittleCup() {
               src={hifiMobile}
               alt="Hi-fi mobile design"
               placeholder="blur"
-              className="lg:absolute lg:top-[68px] lg:left-[32px]"
+              className="lg:absolute lg:top-[68px] lg:left-[32px] drop-shadow-md"
             />
           </div>
           <Image
             src={hifiDesktop}
             alt="Hi-fi desktop design"
             placeholder="blur"
-            className="w-[700px]"
+            className="w-[700px] drop-shadow-sm"
           />
         </div>
         <Divider borderColor="border-white" marginBottom={false} />
