@@ -311,7 +311,7 @@ export default function TrappedDowntown() {
         />
         <div className="flex flex-row mb-12 md:mb-16 lg:mb-[74px] mx-6 lg:mx-48 justify-around">
           <div className="mx-2">
-            <p className="h-12 flex items-center justify-center text-center">
+            <p className="h-20 sm:h-12 flex items-center justify-center text-center">
               HOME SCREEN
             </p>
             <div className="relative p-2 sm:p-4">
@@ -329,7 +329,7 @@ export default function TrappedDowntown() {
             </div>
           </div>
           <div className="mx-2">
-            <p className="h-12 flex items-center justify-center text-center">
+            <p className="h-20 sm:h-12 flex items-center justify-center text-center">
               CONTACT US SCREEN
             </p>
             <div className="relative p-2 sm:p-4">
@@ -347,7 +347,7 @@ export default function TrappedDowntown() {
             </div>
           </div>
           <div className="mx-2">
-            <p className="h-12 flex items-center justify-center text-center">
+            <p className="h-20 sm:h-12 flex items-center justify-center text-center">
               EVENTS & GIFTS SCREEN
             </p>
             <div className="relative p-2 sm:p-4">
