@@ -143,7 +143,7 @@ export default function LittleCup() {
           bgColor="bronze"
         />
         <div className="flex flex-col lg:flex-row justify-center items-center">
-          <div className="flex flex-col w-full max-w-[600px] m-8">
+          <div className="flex flex-col w-full max-w-[600px] m-8 items-center lg:items-start">
             <p className="text-black">Tested Version</p>
             <Image
               src={userTests003}
@@ -151,7 +151,7 @@ export default function LittleCup() {
               className="drop-shadow-md"
             />
           </div>
-          <div className="flex flex-col w-full max-w-[600px] m-8">
+          <div className="flex flex-col w-full max-w-[600px] m-8 items-center lg:items-start">
             <p className="text-black">Iterated Version</p>
             <Image
               src={userTests004}
