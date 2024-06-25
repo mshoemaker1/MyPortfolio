@@ -32,12 +32,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative bg-white text-black dark:bg-gray-950 dark:text-white shadow-md dark:shadow-lg">
+    <nav className="relative bg-white text-black dark:bg-[#000] dark:text-white shadow-md dark:shadow-lg">
       <div className="max-w-screen-2xl mx-auto px-4 py-4 md:pr-24 relative z-10">
         <div className="flex justify-between items-center">
           <div className="flex items-center space-x-4">
             <Link href="/" className="ml-2 md:ml-10 w-10 md:w-[86px]">
-              <Image src="/m-logo.png" alt="Logo" width={86} height={86} />
+              <Image src="/m-logo.svg" alt="Logo" width={86} height={86} />
             </Link>
           </div>
           <div className="hidden md:flex items-center space-x-4">
@@ -45,7 +45,7 @@ const Navbar = () => {
               <div key={item.href} className="relative group">
                 <MenuItem href={item.href} label={item.label} />
                 {item.subItems && (
-                  <div className="absolute left-0 w-64 p-4 bg-white dark:bg-gray-800 dark:text-white shadow-md dark:shadow-lg hidden group-hover:block">
+                  <div className="absolute left-0 w-64 p-4 bg-white dark:bg-zinc-900 dark:text-white shadow-md dark:shadow-lg hidden group-hover:block">
                     {item.subItems.map((subItem) => (
                       <MenuItem
                         key={subItem.href}
