@@ -119,24 +119,3 @@ export const richfieldResearchSquares = [
       "The website will serve as a hub for gathering donations, signing up volunteers, and event details.",
   },
 ];
-
-export const trappedDowntownCurrentExperiencePoints: Point[] = [
-  {"Optimize navigation": "All topics are on the same level and could benefit from a clearer hierarchy."},
-  {"Prioritize mobile-first refresh": "Each page is dense with content and CTA buttons are inconsistent. 60% of users visit the website using a mobile phone."},
-  {"Create consistent layouts": "Small adjustments could have a big impact including adding a consistent margin to enhance readability."},
-  {"Create homepage": "Add a homepage that has critical information and easily directs users where to find more information."},
-]
-
-export const trappedDowntownSiteMapPoints: Point[] = [
-  {"Add Homepage": "Adding a homepage gives users high priority information quickly (ex. price, hours of operation) and a Book Now CTA. Homepage also serves as a central hub for directing users to more information."},
-  {"Redesign CTA button": "Book Now CTA redesigned as a stand-alone button vs. blending in with the other menu items."},
-  {"Streamline Content": "Organized content into 3 groups which enables a 'right information at the right time' flow to the website."},
-  {"Update Footer": "Added relevant information and quick links to site footer to help users navigate the website."},
-]
-
-export const trappedDowntownCircles = [
-  { x: "right-[calc(50%+430px)]", y: "top-[calc(50%-320px)]", text: 'Make “Book Now” action easy to find'},
-  { x: "left-[calc(50%+400px)]", y: "top-[calc(50%-220px)]", text: 'Show WHO this experience is for'},
-  { x: "right-[calc(50%+340px)]", y: "bottom-[calc(50%-200px)]", text: 'Showcase external validation on website'},
-  { x: "left-[calc(50%+370px)]", y: "bottom-[calc(50%-250px)]", text: 'Remove group planning friction'},
-]
