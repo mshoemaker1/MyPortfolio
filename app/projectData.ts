@@ -90,21 +90,21 @@ export const richfieldResearchSquares = [
     alt: "Handshake icon",
     title: "Rebuild Trust",
     description:
-      "Without donations, the events will not happen so the website needs to authentically (and quickly) rebuild trust with the community and potential sponsors.",
+      "The events won’t happen without donations so the website needs to authentically rebuild trust with the community and sponsors.",
   },
   {
     image: dottedGrid,
     alt: "Dotted grid icon",
     title: "Build Awareness",
     description:
-      "After a 3-year hiatus and a rebrand, users might be unaware or confused about the event.",
+      "After a 3-year hiatus and a rebrand, users might be unaware or reluctant to engage with the event.",
   },
   {
     image: people,
     alt: "People icon",
     title: "Serve Multiple Audiences",
     description:
-      "The website will serve as a hub for gathering donations, signing up volunteers and vendors, and event details.",
+      "The website will serve as a hub for gathering donations, signing up volunteers, and event details.",
   },
 ];
 

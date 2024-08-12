@@ -35,7 +35,6 @@ export default function LittleCup() {
       )}
       <div className="flex flex-col">
         <Section
-          title="Research"
           header="Refining the challenge"
           content={[
             "Through research, I found that there was an untapped market for a product tailored to identifying and reviewing coffee shops. Users aren’t just looking for their caffeine fix, they are looking for places to study and places to support their community.",
@@ -59,7 +58,6 @@ export default function LittleCup() {
         <FilterLibrary />
         <Divider />
         <Section
-          title="Ideate"
           header="Constructing the site map"
           content={[
             "Taking inspiration from the competitive analysis, I built a simple site map to serve as the foundation for the website.",
@@ -91,7 +89,6 @@ export default function LittleCup() {
       </div>
       <Divider />
       <Section
-        title="Test"
         header="Round 1: User testing identifies opportunities for improving the navigation  & log-in processes"
         bgColor="bronze"
       />
@@ -161,7 +158,7 @@ export default function LittleCup() {
         </div>
       </div>
       <div className="bg-neutral-550 py-20">
-        <Section title="Final design" bgColor="neutral" disableBottomPadding />
+        <Section bgColor="neutral" disableBottomPadding />
         <div className="flex flex-col lg:flex-row justify-center items-center lg:items-start">
           <div className="relative w-[145px]">
             <Image
@@ -180,7 +177,6 @@ export default function LittleCup() {
         </div>
         <Divider borderColor="border-white" marginBottom={false} />
         <Section
-          title="Reflect"
           header="Learnings"
           content={[""]}
           disableBottomPadding

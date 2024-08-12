@@ -23,7 +23,7 @@ const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
 
   return (
     <div
-      className={`flex flex-col px-10 pb-20 md:flex-row md:pl-72 md:pr-32 md:pb-3 lg:px-96
+      className={`flex flex-col px-10 pb-20 md:flex-row md:px-72
       ${bg()}`}
     >
       <ul className="list-disc px-6">

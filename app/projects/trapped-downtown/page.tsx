@@ -59,7 +59,6 @@ export default function TrappedDowntown() {
       )}
       <div className="flex flex-col">
         <Section
-          title="Research"
           header="What are people seeing when they book an escape room?"
           content={[
             "I needed to conduct user research to really understand the needs of their current and potential customers. To get up to speed on current trends and relevant content, I did a competitive analysis on four Escape Room businesses located across the country.",
@@ -167,7 +166,6 @@ export default function TrappedDowntown() {
       <div>
         <Divider />
         <Section
-          title="Ideate"
           header="How do we organize the content in a way that puts users at ease and gives them confidence?"
           content={[
             "In the current site map, there is a lack of hierarchy, which can unintentionally get in the way of a good user experience.",
@@ -389,7 +387,6 @@ export default function TrappedDowntown() {
         </div>
         <Divider />
         <Section
-          title="Iterate"
           header="Opportunities for improving the user experience"
           content={[
             "I conducted user testing on the high fidelity mock-ups. I chose the 5-second test framework but modified it for this specific product. Users viewed an image of the Home screen for 15 seconds, then were asked two questions:",
@@ -430,7 +427,7 @@ export default function TrappedDowntown() {
         </div>
       </div>
       <div className="bg-neutral-550 py-20">
-        <Section title="Final design" bgColor="neutral" disableBottomPadding />
+        <Section bgColor="neutral" disableBottomPadding />
         <div className="flex flex-row flex-wrap justify-center">
           <Image
             src={finalDesign1}
@@ -459,7 +456,6 @@ export default function TrappedDowntown() {
         </div>
         <Divider borderColor="border-white" marginBottom={false} />
         <Section
-          title="Results"
           header="Updated site went live May 3"
           content={[
             "I worked with a developer to implement the designs. The newly designed website went live on May 3rd and I'll be checking back to see the impact of the updates over time.",
@@ -502,7 +498,6 @@ export default function TrappedDowntown() {
         </div>
         <Divider borderColor="border-white" marginBottom={false} />
         <Section
-          title="Reflect"
           header="Learnings"
           content={[""]}
           disableBottomPadding
