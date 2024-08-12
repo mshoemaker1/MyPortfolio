@@ -54,7 +54,6 @@ export default function TrappedDowntown() {
           bg={bg}
           heroImage={hero.image}
           heroAlt={hero.alt}
-          heroBulletPoints={hero.bulletPoints}
           heroContent={hero.content}
         />
       )}

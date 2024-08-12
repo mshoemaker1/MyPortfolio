@@ -20,11 +20,6 @@ export const data = [
     hero: {
       image: heroImageTrappedDowntown,
       alt: "Hands holding a phone",
-      bulletPoints: {
-        role: ["UX Designer", "Project Manager"],
-        tools: ["Figma", "Card Sort", "Google Suite"],
-        when: ["5 weeks,", "March - April 2024"],
-      },
       content: {
         challenge: "Trapped Downtown wants to increase their bookings. They've tried marketing in a few places locally but haven't seen enough of an increase in bookings.",
         goal: "Targeted refresh of website to be mobile-first while maintaining current branding.",
@@ -46,11 +41,6 @@ export const data = [
     hero: {
       image: heroImageRichfield,
       alt: "Computer on a desk",
-      bulletPoints: {
-        role: ["UX Designer", "Web Designer"],
-        tools: ["Figma", "Squarespace"],
-        when: ["5 weeks,", "Oct - Nov 2023"],
-      },
       content: {
         challenge: "The Richfield 4th of July volunteer committee needs to raise funds for this year’s celebration. After a hiatus due to a previous leader’s misappropriation of funds and COVID-19, the committee needs to rebuild trust with the community to raise the necessary funds.",
         goal: "Design and build a website that rebuilds trust with the community, accepts donations, and is the source of relevant information for the 2024 Richfield 4th of July celebration.",
@@ -79,11 +69,6 @@ export const data = [
     hero: {
       image: heroLittleCup,
       alt: "Computer on a desk",
-      bulletPoints: {
-        role: ["UX Designer"],
-        tools: ["Figma"],
-        when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
-      },
       content: {
         challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation. This leads to a cluttered map and an overwhelming list of recommendations for users.",
         goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
