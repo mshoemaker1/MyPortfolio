@@ -39,7 +39,11 @@ export const data = [
           ],
         ]
       }
-    }
+    },
+    takeaways: [
+      {title: "Stakeholder understanding", description: "The stakeholder had a pivotal aha! moment when I showed the competitors' mobile homescreens next to Trapped Downtown's mobile homescreen - they were able to step out of their understanding of their own website and really get in the user's shoes and see it with fresh eyes."},
+      {title: "Getting curious", description: "After completing the project, I spent time exploring other analogous websites for interactive events (ex. Meow Wolf). I became more curious and learned that this type of analogous exploration could really strengthen my design process. "},
+    ]
   },
   {
     title: "Rebuilding trust with the community after financial scandal",
@@ -64,7 +68,11 @@ export const data = [
         ],
         outcome: "The site went live and empowered the committee to raise funds from local business and community members. The event was attended by an estimated 50,000 people. The community was re-engaged with the Richfield 4th of July event.",
       }
-    }
+    },
+    takeaways: [
+      {title: "Project planning", description: "I learned the importance (and power) of planning for staged releases of information on an event-based website. We were able to quickly design and build an MVP website without getting bogged down waiting on event details."},
+      {title: "Engaging the community", description: "We engaged with the community throughout our process to ensure we were meeting their needs and building awareness."}
+    ]
   },
   {
     title: "Finding the perfect coffee shop",
@@ -80,7 +88,11 @@ export const data = [
         challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation. This leads to a cluttered map and an overwhelming list of recommendations for users.",
         goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
       }
-    }
+    },
+    takeaways: [
+      {title: "Language matters", description: "Language for filters is important and ideally more testing would be done to validate the current choices as well as adding filters based on popular searches."},
+      {title: "Context matters", description: "Call to action buttons need to be  in context. “Write a Review” doesn’t make sense without the context of a specific shop or product to write the review about."},
+    ]
   },
 ];
 

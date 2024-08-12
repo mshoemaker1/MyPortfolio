@@ -4,6 +4,7 @@ import HeroHeader from "@/components/HeroHeader";
 import Image from "next/image";
 import { richfieldResearchSquares } from "../../projectData";
 import SectionBullets from "@/components/Section/SectionBullets";
+import Takeaways from "@/components/Takeaways";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -90,6 +91,7 @@ export default function RichfieldJuly4() {
             "An estimated 50,000 attendees participated in the 1.5 days of planned events before the last minute cancellation of the fireworks.",
           ]}
         />
+        <Takeaways data={projectData!.takeaways} />
         <Section header="Key technologies/skills" disableBottomPadding />
         <SectionBullets
           points={[
