@@ -11,9 +11,14 @@ const Takeaways = ({ data }: TakeawayProps) => {
       <div className="border-b-[1px]">
         <h2 className="mb-4">Key Takeaways</h2>
         {data.map((takeaway, index) => (
-          <div key={index} className="flex flex-row py-12 border-t-[1px]">
-            <p className="font-bold w-1/3">{takeaway.title}</p>
-            <p className="w-2/3">{takeaway.description}</p>
+          <div
+            key={index}
+            className="flex flex-col py-12 border-t-[1px] sm:items-center sm:flex-row"
+          >
+            <p className="font-bold mr-8 sm:w-1/3 mb-4 sm:mb-0">
+              {takeaway.title}
+            </p>
+            <p className="sm:w-2/3">{takeaway.description}</p>
           </div>
         ))}
       </div>
