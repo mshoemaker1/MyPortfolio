@@ -30,7 +30,6 @@ export default function LittleCup() {
           bg={bg}
           heroImage={hero.image}
           heroAlt={hero.alt}
-          heroBulletPoints={hero.bulletPoints}
           heroContent={hero.content}
         />
       )}

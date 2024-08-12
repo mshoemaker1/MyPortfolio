@@ -7,9 +7,6 @@ interface HeroHeaderProps {
   bg: string;
   heroImage: StaticImageData;
   heroAlt: string;
-  heroBulletPoints: {
-    [key: string]: string[];
-  };
   heroContent: {
     challenge?: HeroContentTextType;
     goal?: HeroContentTextType;
@@ -22,7 +19,6 @@ const HeroHeader = ({
   bg,
   heroImage,
   heroAlt,
-  heroBulletPoints,
   heroContent,
 }: HeroHeaderProps) => {
   return (
@@ -34,7 +30,7 @@ const HeroHeader = ({
         alt={heroAlt}
         placeholder="blur"
       />
-      <ProjectHero bulletPoints={heroBulletPoints} content={heroContent} />
+      <ProjectHero content={heroContent} />
     </>
   );
 };

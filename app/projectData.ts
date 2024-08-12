@@ -11,7 +11,7 @@ import { Point } from "@/components/Section/SectionBullets";
 
 export const data = [
   {
-    title: "Unlocking more bookings",
+    title: "Finding clues and solving puzzles to unlock more bookings",
     description: "Updating the Trapped Downtown user experience",
     image: homeTrappedDowntown,
     bg: "bg-sand-500",
@@ -20,24 +20,29 @@ export const data = [
     hero: {
       image: heroImageTrappedDowntown,
       alt: "Hands holding a phone",
-      bulletPoints: {
-        role: ["UX Designer", "Project Manager"],
-        tools: ["Figma", "Card Sort", "Google Suite"],
-        when: ["5 weeks,", "March - April 2024"],
-      },
       content: {
-        challenge: "Trapped Downtown wants to increase their bookings. They've tried marketing in a few places locally but haven't seen enough of an increase in bookings.",
-        goal: "Targeted refresh of website to be mobile-first while maintaining current branding.",
+        challenge: "Trapped Downtown needs to increase their revenue. They’ve tried marketing in a few places locally (including innovative ideas like adding QR codes on drink coasters at local breweries and sponsoring the pedal pub that runs downtown) but they haven’t seen a substantial enough increase in bookings to turn this hobby business into a revenue generating business.",
+        goal: "Increase revenue through multi-prong approach to fresh marketing. This will include turning a non-responsive website into a mobile experience as well as continuing to implement innovative marketing activities.",
         process: [
-          "My ideal process to address this challenge starts with a discovery phase where I learn as much as I can about the business itself, and start to dig in to the nuances of the industry. Then I plan to get to know users and their motivations.",
-          "Once I have grounded myself with that information, I will evaluate the structure of information on the website to ensure there is a good foundation to design on. After setting the information architecture, I will create multiple wireframes then build mockups to review with the stakeholders. Finally, I plan to do user testing to ensure the designs are meeting the needs of the user and iterate based on those findings.",
-          "In reality, I was able to follow my process fairly closely. I wasn't able to interview as many local users as I would have liked so I supplemented with users that met the criteria but were located across the country."
+          [
+          "Competitive analysis",
+          "Heuristic evaluation of current website",
+          "User interviews",
+          "Card sort activity with users",
+          "Identified actionable insights",
+          "Reorganize information architecture and site map",
+          "Mid-point check-in with stakeholders",
+          "Sketched mobile-first wireframes",
+          "Designed high fidelity prototype",
+          "Conducted user testing and made modifications",
+          "Worked with developer to implement new designs",
+          ],
         ]
       }
     }
   },
   {
-    title: "Rebuilding trust",
+    title: "Rebuilding trust with the community after financial scandal",
     description: "Designing the Richfield 4th of July website",
     image: homeRichfield,
     bg: "bg-lavender-500",
@@ -46,26 +51,18 @@ export const data = [
     hero: {
       image: heroImageRichfield,
       alt: "Computer on a desk",
-      bulletPoints: {
-        role: ["UX Designer", "Web Designer"],
-        tools: ["Figma", "Squarespace"],
-        when: ["5 weeks,", "Oct - Nov 2023"],
-      },
       content: {
         challenge: "The Richfield 4th of July volunteer committee needs to raise funds for this year’s celebration. After a hiatus due to a previous leader’s misappropriation of funds and COVID-19, the committee needs to rebuild trust with the community to raise the necessary funds.",
-        goal: "Design and build a website that rebuilds trust with the community, accepts donations, and is the source of relevant information for the 2024 Richfield 4th of July celebration.",
         process: [
-          "We were a small team of two - myself and my mentor, a Senior UX Designer. We had a tight deadline as the committee wanted to have a live website when sourcing year-end gifts from local businesses. With the tight deadline in mind, we laid out the following plan:",
           [
-            "Interview Richfield residents to understand their needs",
-            "Create personas & user journeys",
-            "Create site map, moodboard, and style guide as foundation for the new website",
-            "Design low-fidelity wireframes and test with users",
-            "Design high-fidelity mockups",
-            "Build Squarespace site",
+            "Interviewed Richfield community members",
+            "Conducted competitive analysis",
+            "Identified actionable insights",
+            "Designed low-fidelity wireframes ",
+            "Built Squarespace site",
           ],
-          "Due to outside work and family commitments, we lost additional time at the beginning of the project making our timeline even tighter. We pared down our research plan and ultimately skipped testing our wireframes with users.  Though not ideal, we prioritized launching the site on time to meet the needs of the committee."
-        ]
+        ],
+        outcome: "The site went live and empowered the committee to raise funds from local business and community members. The event was attended by an estimated 50,000 people. The community was re-engaged with the Richfield 4th of July event.",
       }
     }
   },
@@ -79,11 +76,6 @@ export const data = [
     hero: {
       image: heroLittleCup,
       alt: "Computer on a desk",
-      bulletPoints: {
-        role: ["UX Designer"],
-        tools: ["Figma"],
-        when: ["Phase 1: 4 weeks,", "February 2024", "Phase 2: 1 week,", "June 2024"],
-      },
       content: {
         challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation. This leads to a cluttered map and an overwhelming list of recommendations for users.",
         goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
