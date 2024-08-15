@@ -85,8 +85,20 @@ export const data = [
       image: heroLittleCup,
       alt: "Computer on a desk",
       content: {
-        challenge: "The well-known sites that provide crowd-sourced reviews about businesses have expanded their purview to the point of oversaturation. This leads to a cluttered map and an overwhelming list of recommendations for users.",
-        goal: "Provide users an engaging experience to search and review coffee shops. The experience will include a search function with coffee shop specific filters and the ability to engage with other coffee shop loving community members.",
+        challenge: "I am passionate about cold brew coffee and find joy in searching out new coffee shops in the Twin Cities and wherever I am traveling! Unfortunately, finding crowd sourced reviews specifically about cold brew is very difficult. Every car dealership and hotel lobby advertises that they have coffee but I don’t want just any old cup of joe, I want cold brew!",
+        goal: "I want to be able to search for cold brew coffee and ignore the coffee shops that don’t have cold brew. This will also allow me to connect with other cold brew lovers in the community.",
+        process: [
+          [
+            "Competitive analysis",
+            "User interviews",
+            "Identified user pain points",
+            "Built site map",
+            "Sketched responsive wireframes",
+            "Built low fidelity wireframes",
+            "Designed high fidelity mockups",
+            "Multiple rounds of user testing",
+          ]
+        ]
       }
     },
     takeaways: [

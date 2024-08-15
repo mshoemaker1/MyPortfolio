@@ -82,6 +82,7 @@ export default function TrappedDowntown() {
             "User Testing",
           ]}
         />
+        <Section header="Curious to learn more? Let's connect!" />
       </div>
     </main>
   );

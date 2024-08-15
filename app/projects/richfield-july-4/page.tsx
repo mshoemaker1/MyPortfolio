@@ -103,6 +103,7 @@ export default function RichfieldJuly4() {
             "Wireframing",
           ]}
         />
+        <Section header="Curious to learn more? Let's connect!" />
       </div>
     </main>
   );
