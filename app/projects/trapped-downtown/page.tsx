@@ -3,6 +3,7 @@ import Section from "@/components/Section";
 import SectionBullets from "@/components/Section/SectionBullets";
 import HeroHeader from "@/components/HeroHeader";
 import Takeaways from "@/components/Takeaways";
+import { Connect } from "@/components/Connect";
 
 const projectData = data.find(
   (project) => project.path === "/projects/trapped-downtown"
@@ -82,7 +83,7 @@ export default function TrappedDowntown() {
             "User Testing",
           ]}
         />
-        <Section header="Curious to learn more? Let's connect!" />
+        <Connect />
       </div>
     </main>
   );

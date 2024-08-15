@@ -1,20 +1,11 @@
 import { data } from "../../projectData";
 import Section from "@/components/Section";
 import HeroHeader from "@/components/HeroHeader";
-import { Divider } from "@/components/Divider";
 import { ResearchPins } from "./ResearchPins";
 import { FilterLibrary } from "./FilterLibrary";
-import Image from "next/image";
 import SectionBullets from "@/components/Section/SectionBullets";
-import siteMap from "../../../public/little-cup/site-map.png";
-import devicesHome from "../../../public/little-cup/devices-home.png";
-import userTests001 from "../../../public/little-cup/user-tests-001.png";
-import userTests002 from "../../../public/little-cup/user-tests-002.png";
-import userTests003 from "../../../public/little-cup/user-tests-003.png";
-import userTests004 from "../../../public/little-cup/user-tests-004.png";
-import hifiDesktop from "../../../public/little-cup/hifi-desktop.png";
-import hifiMobile from "../../../public/little-cup/hifi-mobile.png";
 import Takeaways from "@/components/Takeaways";
+import { Connect } from "@/components/Connect";
 
 const projectData = data.find(
   (project) => project.path === "/projects/little-cup"
@@ -81,7 +72,7 @@ export default function LittleCup() {
             "Wireframing",
           ]}
         />
-        <Section header="Curious to learn more? Let's connect!" />
+        <Connect />
       </div>
     </main>
   );

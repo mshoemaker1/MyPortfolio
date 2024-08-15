@@ -5,6 +5,7 @@ import Image from "next/image";
 import { richfieldResearchSquares } from "../../projectData";
 import SectionBullets from "@/components/Section/SectionBullets";
 import Takeaways from "@/components/Takeaways";
+import { Connect } from "@/components/Connect";
 
 const projectData = data.find(
   (project) => project.path === "/projects/richfield-july-4"
@@ -103,7 +104,7 @@ export default function RichfieldJuly4() {
             "Wireframing",
           ]}
         />
-        <Section header="Curious to learn more? Let's connect!" />
+        <Connect />
       </div>
     </main>
   );
