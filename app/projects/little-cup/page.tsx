@@ -25,7 +25,7 @@ export default function LittleCup() {
           heroContent={hero.content}
         />
       )}
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-20">
         <Section
           header="From Overwhelming to Efficient: Ensuring the User has tailored filters and a tidy map."
           content={[
@@ -46,7 +46,7 @@ export default function LittleCup() {
           ]}
           disableBottomPadding
         />
-        <p className="italic flex flex-col px-10 md:flex-row md:px-72 md:py-30">
+        <p className="italic flex flex-col px-10 pb-10 md:flex-row md:px-72">
           *Note to self: for passion projects, source users with the same
           passion ;)
         </p>
@@ -59,21 +59,22 @@ export default function LittleCup() {
             "Evaluate the benefits of offering log-in creation and storage.",
             "Test blog-like content to see if users engage with it, as seen on The Infatuation website.",
           ]}
+          disableBottomPadding
         />
-        <Takeaways data={projectData!.takeaways} />
-        <Section header="Key technologies/skills" disableBottomPadding />
-        <SectionBullets
-          points={[
-            "Figma",
-            "High fidelity mockups",
-            "Information architecture",
-            "Prototyping",
-            "Usability testing",
-            "Wireframing",
-          ]}
-        />
-        <Connect />
       </div>
+      <Takeaways data={projectData!.takeaways} />
+      <Section header="Key technologies/skills" disableBottomPadding />
+      <SectionBullets
+        points={[
+          "Figma",
+          "High fidelity mockups",
+          "Information architecture",
+          "Prototyping",
+          "Usability testing",
+          "Wireframing",
+        ]}
+      />
+      <Connect />
     </main>
   );
 }

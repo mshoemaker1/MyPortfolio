@@ -1,6 +1,6 @@
 export const Connect = () => {
   return (
-    <div className="flex flex-row px-10 py-20 md:px-72 md:py-30">
+    <div className="flex flex-row px-10 pb-20 md:px-72 md:pb-32 md:pt-4">
       <h3>Curious to learn more?</h3>
       &nbsp;
       <a

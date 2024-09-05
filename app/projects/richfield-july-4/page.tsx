@@ -24,7 +24,7 @@ export default function RichfieldJuly4() {
           heroContent={hero.content}
         />
       )}
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-20">
         <Section
           header="Competitive Analysis identifies impactful features"
           content={[
@@ -47,7 +47,7 @@ export default function RichfieldJuly4() {
           ]}
           disableBottomPadding
         />
-        <div className="flex flex-row flex-wrap w-11/12 self-center justify-center sm:w-4/5">
+        <div className="flex flex-row flex-wrap w-11/12 self-center justify-center sm:w-4/5 py-14">
           {richfieldResearchSquares.map((square, index) => (
             <div
               key={index}
@@ -92,20 +92,20 @@ export default function RichfieldJuly4() {
             "An estimated 50,000 attendees participated in the 1.5 days of planned events before the last minute cancellation of the fireworks.",
           ]}
         />
-        <Takeaways data={projectData!.takeaways} />
-        <Section header="Key technologies/skills" disableBottomPadding />
-        <SectionBullets
-          points={[
-            "Competitive analysis",
-            "Figma",
-            "Research plan development",
-            "Squarespace",
-            "Survey management and analysis",
-            "Wireframing",
-          ]}
-        />
-        <Connect />
       </div>
+      <Takeaways data={projectData!.takeaways} />
+      <Section header="Key technologies/skills" disableBottomPadding />
+      <SectionBullets
+        points={[
+          "Competitive analysis",
+          "Figma",
+          "Research plan development",
+          "Squarespace",
+          "Survey management and analysis",
+          "Wireframing",
+        ]}
+      />
+      <Connect />
     </main>
   );
 }

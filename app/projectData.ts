@@ -75,7 +75,7 @@ export const data = [
     ]
   },
   {
-    title: "Finding the perfect coffee shop",
+    title: "Searching for the perfect cup of cold brew",
     description: "Designing Little Cup, a responsive website",
     image: homeLittleCup,
     bg: "bg-bronze-500",

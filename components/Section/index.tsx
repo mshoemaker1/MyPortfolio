@@ -28,7 +28,7 @@ const Section = ({
 
   return (
     <section
-      className={`flex flex-col px-10 py-20 md:flex-row md:px-72 md:py-30
+      className={`flex flex-col px-10 md:flex-row md:px-72
       ${bg()}
       ${disableBottomPadding && "pb-0"}`}
     >

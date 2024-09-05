@@ -7,9 +7,14 @@ export type Point = {
 interface SectionBulletsProps {
   points: Point[] | string[];
   bgColor?: "neutral" | "bronze";
+  disableBottomPadding?: boolean;
 }
 
-const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
+const SectionBullets = ({
+  points,
+  bgColor,
+  disableBottomPadding = false,
+}: SectionBulletsProps) => {
   const bg = () => {
     switch (bgColor) {
       case "neutral":
@@ -23,8 +28,8 @@ const SectionBullets = ({ points, bgColor }: SectionBulletsProps) => {
 
   return (
     <div
-      className={`flex flex-col px-10 pb-20 md:flex-row md:px-72
-      ${bg()}`}
+      className={`flex flex-col px-10 pb-8 md:flex-row md:px-72 md:pb-12
+      ${bg()} ${disableBottomPadding && "pb-0"}`}
     >
       <ul className="list-disc px-6">
         {points.map((point, index) => {

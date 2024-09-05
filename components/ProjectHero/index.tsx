@@ -9,10 +9,13 @@ interface HeroContentProps {
 
 const ProjectHero = ({ content }: HeroContentProps) => {
   return (
-    <div className="flex flex-col px-10 py-20 bg-neutral-550 text-white md:flex-row md:px-72 md:py-30">
+    <div className="flex flex-col px-10 py-20 bg-neutral-550 text-white md:flex-row md:px-72 md:py-16">
       <div className="flex flex-col">
-        {Object.keys(content).map((key) => (
-          <div key={key} className="mb-4">
+        {Object.keys(content).map((key, index) => (
+          <div
+            key={key}
+            className={index === Object.keys(content).length - 1 ? "" : "mb-10"}
+          >
             <h3 className="mb-1">{capitalize(key)}</h3>
             <Content contentText={content[key]} />
           </div>

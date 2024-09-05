@@ -22,7 +22,7 @@ export default function TrappedDowntown() {
           heroContent={hero.content}
         />
       )}
-      <div className="flex flex-col">
+      <div className="flex flex-col pt-20">
         <Section header="Users want clarity" disableBottomPadding />
         <div className="px-10 md:px-72 italic">
           <p>
@@ -31,7 +31,7 @@ export default function TrappedDowntown() {
           </p>
           <p>-User</p>
         </div>
-        <div className="px-10 pt-4 pb-10 md:px-72">
+        <div className="px-10 pt-8 pb-12 md:px-72">
           <p>Interviews revealed four key insights:</p>
           <ol className="list-decimal px-6">
             <li>Make “Book Now” action easy to find</li>
@@ -69,22 +69,22 @@ export default function TrappedDowntown() {
           </p>
           <p>- Courtney, Trapped Downtown Owner</p>
         </div>
-        <Takeaways data={projectData!.takeaways} />
-        <Section header="Key technologies/skills" disableBottomPadding />
-        <SectionBullets
-          points={[
-            "Card Sort",
-            "Competitive analysis",
-            "Figma",
-            "Heuristic evaluation",
-            "Information architecture",
-            "Prototyping",
-            "User Interviews",
-            "User Testing",
-          ]}
-        />
-        <Connect />
       </div>
+      <Takeaways data={projectData!.takeaways} />
+      <Section header="Key technologies/skills" disableBottomPadding />
+      <SectionBullets
+        points={[
+          "Card Sort",
+          "Competitive analysis",
+          "Figma",
+          "Heuristic evaluation",
+          "Information architecture",
+          "Prototyping",
+          "User Interviews",
+          "User Testing",
+        ]}
+      />
+      <Connect />
     </main>
   );
 }

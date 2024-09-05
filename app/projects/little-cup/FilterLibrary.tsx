@@ -8,7 +8,7 @@ const data = {
 
 export const FilterLibrary = () => {
   return (
-    <div className="flex flex-row flex-wrap justify-center">
+    <div className="flex flex-row flex-wrap justify-center self-center py-16 lg:w-[900px]">
       {Object.keys(data).map((key) => (
         <div
           key={key}
