@@ -55,15 +55,17 @@ export default function TrappedDowntown() {
             "Updating the footer to add relevant information and quick links in order to help users navigate the website.",
           ]}
         />
-        <Section
-          header="Impact"
-          content={[
-            "I worked with a developer to implement the designs. The redesigned website launched on May 3rd and resulted in a 16% increase in unique visitors in the following 2 months (comparing June/July 2023 to June/July 2024) and a 46% increase in bookings in the same period.",
-          ]}
-          disableBottomPadding
-        />
-        <div className="px-10 mt-4 md:px-72">
-          <p className="italic">
+        <Section header="Impact" disableBottomPadding />
+        <div className="px-10 md:px-72">
+          <p>
+            I worked with a developer to implement the designs. The redesigned
+            website launched on May 3rd and resulted in a{" "}
+            <span className="font-bold">16% increase</span> in unique visitors
+            in the following 2 months (comparing June/July 2023 to June/July
+            2024) and a <span className="font-bold">46% increase</span> in
+            bookings in the same period.
+          </p>
+          <p className="italic mt-4">
             “The website redesign gives us a renewed sense of excitement for our
             business's potential growth!”
           </p>

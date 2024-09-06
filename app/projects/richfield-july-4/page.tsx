@@ -85,14 +85,26 @@ export default function RichfieldJuly4() {
           ]}
           disableBottomPadding
         />
-        <SectionBullets
-          points={[
-            "The website had 23k unique visitors in the month leading up to event, a 10x increase from the previous 7 months.",
-            "The event attracted 19 sponsors and collected many private donations.",
-            "An estimated 50,000 attendees participated in the 1.5 days of planned events before the last minute cancellation of the fireworks.",
-          ]}
-          disableBottomPadding
-        />
+        <div className={`flex flex-col px-10 md:flex-row md:px-72`}>
+          <ul className="list-disc px-6">
+            <li>
+              The website had{" "}
+              <span className="font-bold">23k unique visitors</span> in the
+              month leading up to event, a{" "}
+              <span className="font-bold">10x increase</span> from the previous
+              7 months.
+            </li>
+            <li>
+              The event attracted <span className="font-bold">19 sponsors</span>{" "}
+              and collected many private donations.
+            </li>
+            <li>
+              An estimated <span className="font-bold">50,000 attendees</span>{" "}
+              participated in the 1.5 days of planned events before the last
+              minute cancellation of the fireworks.
+            </li>
+          </ul>
+        </div>
       </div>
       <Takeaways data={projectData!.takeaways} />
       <Section header="Key technologies/skills" disableBottomPadding />
