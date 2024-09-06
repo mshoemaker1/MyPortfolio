@@ -91,6 +91,7 @@ export default function RichfieldJuly4() {
             "The event attracted 19 sponsors and collected many private donations.",
             "An estimated 50,000 attendees participated in the 1.5 days of planned events before the last minute cancellation of the fireworks.",
           ]}
+          disableBottomPadding
         />
       </div>
       <Takeaways data={projectData!.takeaways} />

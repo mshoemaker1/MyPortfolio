@@ -29,7 +29,7 @@ const SectionBullets = ({
   return (
     <div
       className={`flex flex-col px-10 pb-8 md:flex-row md:px-72 md:pb-12
-      ${bg()} ${disableBottomPadding && "pb-0"}`}
+      ${bg()} ${disableBottomPadding && "pb-0 md:pb-0"}`}
     >
       <ul className="list-disc px-6">
         {points.map((point, index) => {
