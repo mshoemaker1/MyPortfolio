@@ -62,10 +62,10 @@ export default function TrappedDowntown() {
           ]}
           disableBottomPadding
         />
-        <div className="px-10 md:px-72">
+        <div className="px-10 mt-4 md:px-72">
           <p className="italic">
             “The website redesign gives us a renewed sense of excitement for our
-            business’s potential growth!”
+            business's potential growth!”
           </p>
           <p>- Courtney, Trapped Downtown Owner</p>
         </div>

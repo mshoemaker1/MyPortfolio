@@ -36,7 +36,10 @@ const Section = ({
         <h3 className="mb-4">{header}</h3>
         {content &&
           content.map((paragraph, index) => (
-            <p key={index} className="mb-4">
+            <p
+              key={index}
+              className={index === content.length - 1 ? "mb-0" : "mb-4"}
+            >
               {paragraph}
             </p>
           ))}

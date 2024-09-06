@@ -46,7 +46,7 @@ export default function LittleCup() {
           ]}
           disableBottomPadding
         />
-        <p className="italic flex flex-col px-10 pb-10 md:flex-row md:px-72">
+        <p className="italic flex flex-col px-10 pb-10 pt-4 md:flex-row md:px-72">
           *Note to self: for passion projects, source users with the same
           passion ;)
         </p>
