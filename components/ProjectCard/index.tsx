@@ -22,7 +22,7 @@ const ProjectCard = ({
       className={`flex flex-col items-center justify-center p-8 my-2 md:m-4 md:rounded-lg shadow-lg ${bg} text-black hover:opacity-80 transition duration-300 ease-in-out`}
     >
       <div className="flex flex-col justify-start w-full mb-6">
-        <h2 className="text-xl font-semibold">{title}</h2>
+        <h2 className="text-xl">{title}</h2>
         <p>{description}</p>
       </div>
       <Image
