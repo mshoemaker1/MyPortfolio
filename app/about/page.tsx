@@ -18,35 +18,33 @@ export default function About() {
         <div className="md:mx-8">
           <div>
             <p className="text-lg text-left mb-6">About Meg</p>
-            <p className="text-3xl text-left mt-2 my-6">I'm a UX Designer.</p>
             <p className="text-3xl text-left mt-2 my-6">
-              My work style has been described as “collaborative decision
-              making.” I regularly share my work/opinions/plans and ask for
-              feedback. This is reflected in my design process - I ground myself
-              in the content through stakeholder interviews and competitive
-              analyses before jumping into designing.{" "}
-              <span className="italic">
-                What got you to this decision point? What has been tried before?
-                What does ‘good’ look like in this space?
-              </span>
+              I'm a UX Designer and Researcher rethinking consumer apps for
+              mature organizations.
             </p>
             <p className="text-3xl text-left mt-2 my-6">
-              I'm also a mom of two little kids.
-              <br />
-              And when I get the chance, I love catching up on the newest
-              restaurants and experiences in the Twin Cities!
+              In my previous career as an HR Business Partner, I partnered with
+              Technology and Design teams for 8 years at companies like IDEO and
+              NBCUniversal.
+            </p>
+            <p className="text-3xl text-left mt-2 my-6">
+              In 2024 I completed my certificate in UX Design and began
+              freelancing with woman-owned and community focused organizations.
+              I was drawn to the creative aspect of wireframing and prototyping.
             </p>
           </div>
           <div>
-            <p className="text-lg text-left mb-6 mt-12">{`HR ⇢ UX`}</p>
+            <p className="text-lg text-left mb-6 mt-12">{`In my free time...`}</p>
             <p className="text-3xl text-left mt-2 my-6">
-              In my previous career as an HR Business Partner, I partnered with
-              Technology and Design teams for 8+ years. I empathized with
-              employee's needs and built seamless employee experiences.
+              I'm also a mom of two little kids. And when I get the chance, I
+              love catching up on the newest restaurants and experiences in the
+              Twin Cities!
             </p>
+            <p className="text-lg text-left mb-6 mt-12">{`What's next?`}</p>
             <p className="text-3xl text-left mt-2 my-6">
-              I'm ready to bring my collaborative spirit to the iterative and
-              creative process of UX Design.
+              I'm looking for a full-time role that is either fully remote or
+              hybrid (Minneapolis) on an established design team that celebrates
+              diverse experiences.
             </p>
           </div>
         </div>
